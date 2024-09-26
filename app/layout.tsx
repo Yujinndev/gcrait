@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
-import Navbar from '@/components/navbar'
+import Navbar from '@/components/ui/navbar'
 import { cn } from '@/lib/utils'
 import './globals.css'
 
@@ -42,7 +42,6 @@ export default function RootLayout({
         )}
       >
         <Navbar />
-
         {children}
       </body>
     </html>

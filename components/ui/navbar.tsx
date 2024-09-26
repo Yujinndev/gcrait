@@ -6,7 +6,6 @@ import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { FacebookIcon, InstagramIcon, MenuIcon, X } from 'lucide-react'
-import { cn } from '@/lib/utils'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
@@ -64,7 +63,7 @@ const Navbar = () => {
                 >
                   <Link
                     href={href}
-                    className="font-braveEightyone text-start text-xl"
+                    className="text-start font-braveEightyone text-xl"
                   >
                     {title}
                   </Link>
