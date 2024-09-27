@@ -85,13 +85,16 @@ body {
 
 @layer base {
   * {
-    @apply border-border font-geistMono;
+    @apply border-border text-white;
   }
   body {
     @apply bg-background text-foreground;
   }
   h1 {
-    @apply font-braveEightyone text-balance text-4xl leading-normal lg:text-6xl;
+    @apply font-rubikMono text-balance text-3xl lg:text-4xl xl:text-6xl;
+  }
+  .title-span {
+    @apply text-4xl text-emerald-400 lg:text-5xl xl:text-7xl;
   }
 }
 
@@ -101,10 +104,12 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: rgb(5, 5, 5);
+  z-index: 50;
+  background-color: rgb(30, 30, 30);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(245, 245, 245);
+  z-index: 50;
+  background-color: rgb(255, 255, 255);
   border-radius: 20px;
 }

@@ -4,19 +4,19 @@ import Navbar from '@/components/ui/navbar'
 import { cn } from '@/lib/utils'
 import './globals.css'
 
-const geistSans = localFont({
-  src: './fonts/GeistVF.woff',
-  variable: '--font-geist-sans',
-  weight: '100 900',
-})
-const geistMono = localFont({
-  src: './fonts/GeistMonoVF.woff',
-  variable: '--font-geist-mono',
-  weight: '100 900',
-})
 const braveEightyone = localFont({
   src: './fonts/BraveEightyone.ttf',
   variable: '--font-brave-eightyone',
+  weight: '100 900',
+})
+const dmSans = localFont({
+  src: './fonts/DMSans.ttf',
+  variable: '--font-dmSans',
+  weight: '100 900',
+})
+const rubikMono = localFont({
+  src: './fonts/RubikMonoOne-Regular.ttf',
+  variable: '--font-rubikMono',
   weight: '100 900',
 })
 
@@ -35,10 +35,10 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          'antialiased',
-          geistSans.variable,
-          geistMono.variable,
-          braveEightyone.variable
+          'relative min-h-screen antialiased',
+          braveEightyone.variable,
+          dmSans.variable,
+          rubikMono.variable
         )}
       >
         <Navbar />

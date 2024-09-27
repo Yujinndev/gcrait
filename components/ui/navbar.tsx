@@ -12,7 +12,7 @@ const Navbar = () => {
   const pathname = usePathname()
 
   return (
-    <nav className="fixed flex w-screen items-center justify-between gap-8 border-b-[1px] border-b-gray-50/10 text-white backdrop-blur-[0.9rem] lg:px-24 xl:px-48">
+    <nav className="fixed z-50 flex w-screen items-center justify-between gap-8 border-b-[1px] border-b-gray-50/10 px-3 text-white backdrop-blur-[0.9rem] lg:px-24 xl:px-36">
       <div className="flex items-center gap-12 p-4 xl:gap-16">
         <Link href="/">
           <h1 className="text-4xl">GCRAIT</h1>
@@ -53,18 +53,15 @@ const Navbar = () => {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="absolute top-[4.8rem] h-screen w-screen bg-black p-8 text-white lg:hidden">
-          <ul className="flex flex-col items-center justify-center gap-4 px-12 pt-48">
+        <div className="absolute inset-x-0 top-[4rem] h-screen w-screen bg-black p-8 text-white lg:hidden">
+          <ul className="flex flex-col gap-4 px-12 pt-48">
             {LINKS.map(({ title, href }) => (
               <li key={title} className="flex h-full w-full rounded-md">
                 <Button
                   variant={pathname === href ? 'secondary' : 'ghost'}
                   className="w-full"
                 >
-                  <Link
-                    href={href}
-                    className="text-start font-braveEightyone text-xl"
-                  >
+                  <Link href={href} className="text-start text-xl">
                     {title}
                   </Link>
                 </Button>

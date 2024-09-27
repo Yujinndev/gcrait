@@ -1,73 +1,69 @@
 import Image from 'next/image'
-import LOGO from '@/assets/LOGO.jpg'
+import GCRAIT from '@/assets/LOGO.jpg'
 import CCSE from '@/assets/CCSE.jpg'
 import LORMA from '@/assets/LORMA.jpg'
 import ROBOT from '@/assets/ROBOT.png'
 import { Button } from '@/components/ui/button'
+import { ArrowUpRight } from 'lucide-react'
+
+const LOGOS = [
+  {
+    name: 'LORMA',
+    img: LORMA,
+  },
+  {
+    name: 'GCRAIT',
+    img: GCRAIT,
+  },
+  {
+    name: 'CCSE',
+    img: CCSE,
+  },
+]
 
 export default function Home() {
   return (
-    <main className="h-screen bg-gradient-to-b from-[#000125] from-0% via-[#05313b] via-35% to-[#FFFFFF] to-100% p-8 md:px-20 lg:px-32 xl:px-56">
-      <div className="flex h-full flex-col items-center lg:flex-row lg:items-start lg:justify-center lg:pt-20">
-        <div className="space-y-6 py-8 pt-20 text-white lg:col-span-2">
-          <div className="flex justify-start gap-3">
-            <Image
-              src={LOGO}
-              alt="LOGO"
-              className="h-12 w-12 rounded-full lg:h-24 lg:w-24"
-            />
-            <Image
-              src={CCSE}
-              alt="CCSE"
-              className="h-12 w-12 rounded-full lg:h-24 lg:w-24"
-            />
-            <Image
-              src={LORMA}
-              alt="LORMA"
-              className="h-12 w-12 rounded-full lg:h-24 lg:w-24"
-            />
-          </div>
+    <main className="relative h-screen overflow-x-hidden bg-gradient-to-b from-[#000125] from-0% via-[#05313b] via-55% to-[#FFFFFF] to-[120%]">
+      <Image
+        src={ROBOT}
+        alt="ROBOT"
+        className="absolute -right-2 bottom-10 z-10 w-[400px] opacity-85 md:w-[450px] lg:-right-8 lg:block lg:w-[550px] xl:w-[650px] 2xl:w-[750px]"
+      />
 
+      <section className="relative z-20 flex h-full flex-col gap-4 p-8 pt-28 md:px-16 lg:px-24 xl:px-40 xl:pt-40">
+        <div className="flex items-center py-4">
+          {LOGOS.map((logo) => (
+            <Image
+              key={logo.name}
+              src={logo.img}
+              alt={logo.name}
+              className="h-16 w-16 rounded-full border-[2px] border-gray-600 md:h-24 md:w-24"
+            />
+          ))}
+          <div className="ml-3 h-[3px] w-[20%] rounded-full bg-emerald-400" />
+        </div>
+
+        <div className="lg:3/5 relative space-y-10 xl:w-3/4">
           <div className="space-y-4">
-            <div>
-              <h2 className="font-braveEightyone text-2xl lg:text-4xl">
-                GCRAIT:
-              </h2>
-              <h1 className="text-balance text-left text-3xl tracking-wider lg:text-5xl">
-                Global Conference on{' '}
-                <span className="font-braveEightyone text-3xl text-emerald-400 lg:text-6xl">
-                  Robotics
-                </span>{' '}
-                and{' '}
-                <span className="font-braveEightyone text-3xl text-emerald-400 lg:text-6xl">
-                  Information Technology
-                </span>
-              </h1>
-            </div>
-            <p className="font-[Arial] text-lg font-light lg:w-5/6 lg:text-2xl">
+            <h1 className="text-left">
+              Global Conference on <span className="title-span">Robotics</span>{' '}
+              and <span className="title-span">Information Technology</span>
+            </h1>
+
+            <p className="font-dmSans relative w-[50%] text-base font-light tracking-tighter lg:w-3/4 lg:text-lg xl:text-2xl">
               Collaboration into the New and Innovative Future: Hardware
               Re-imagined
             </p>
-
-            <Button
-              variant="ghost"
-              className="bg-emerald-300 p-4 px-8 text-black lg:px-10 lg:py-6"
-            >
-              Register Now
-            </Button>
           </div>
+          <Button
+            variant="outline"
+            className="group space-x-4 rounded-full bg-transparent p-4 px-8 drop-shadow-[0_0_12px_rgb(110,231,183,.75)] hover:border-emerald-400 hover:bg-emerald-500 lg:px-10 lg:py-6"
+          >
+            <span className="">Register Now</span>
+            <ArrowUpRight className="group-hover:text-black" />
+          </Button>
         </div>
-
-        <div className="relative">
-          <Image
-            src={ROBOT}
-            alt="ROBOT"
-            className="relative z-50"
-            width={600}
-            height={600}
-          />
-        </div>
-      </div>
+      </section>
     </main>
   )
 }
