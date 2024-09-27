@@ -57,7 +57,6 @@ const config: Config = {
         sm: 'calc(var(--radius) - 4px)',
       },
       fontFamily: {
-        // 👇 Add CSS variables
         braveEightyone: ['var(--font-brave-eightyone)'],
         dmSans: ['var(--font-dmSans)'],
         rubikMono: ['var(--font-rubikMono)'],

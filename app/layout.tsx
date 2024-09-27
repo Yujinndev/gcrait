@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
+import { cn } from '@/lib/utils'
 import localFont from 'next/font/local'
 import Navbar from '@/components/ui/navbar'
-import { cn } from '@/lib/utils'
 import './globals.css'
+import 'aos/dist/aos.css'
 
 const braveEightyone = localFont({
   src: './fonts/BraveEightyone.ttf',

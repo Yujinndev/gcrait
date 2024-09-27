@@ -5,11 +5,11 @@ const LINKS = [
   },
   {
     title: 'Registration',
-    href: '/#',
+    href: '/registration',
   },
   {
     title: 'Committee',
-    href: '/#',
+    href: '#',
   },
   {
     title: 'Judges',
