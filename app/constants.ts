@@ -5,7 +5,7 @@ const LINKS = [
   },
   {
     title: 'Registration',
-    href: '/registration',
+    href: '#',
   },
   {
     title: 'Committee',
