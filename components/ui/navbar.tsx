@@ -37,7 +37,7 @@ const Navbar = () => {
         </div>
 
         <Link href="/">
-          <h1 className="text-3xl">GCRAIT</h1>
+          <h1 className="text-2xl font-normal">GCRAIT</h1>
         </Link>
         <div className="hidden lg:block">
           <ul className="flex flex-col gap-3 lg:flex-row">
