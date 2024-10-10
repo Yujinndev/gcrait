@@ -5,11 +5,6 @@ import Navbar from '@/components/ui/navbar'
 import './globals.css'
 import 'aos/dist/aos.css'
 
-const braveEightyone = localFont({
-  src: './fonts/BraveEightyone.ttf',
-  variable: '--font-brave-eightyone',
-  weight: '100 900',
-})
 const dmSans = localFont({
   src: './fonts/DMSans.ttf',
   variable: '--font-dmSans',
@@ -18,6 +13,11 @@ const dmSans = localFont({
 const rubikMono = localFont({
   src: './fonts/RubikMonoOne-Regular.ttf',
   variable: '--font-rubikMono',
+  weight: '100 900',
+})
+const play = localFont({
+  src: './fonts/Play.ttf',
+  variable: '--font-play',
   weight: '100 900',
 })
 
@@ -36,14 +36,14 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          'relative min-h-screen antialiased',
-          braveEightyone.variable,
+          'relative min-h-screen overflow-x-hidden antialiased',
+          play.variable,
           dmSans.variable,
           rubikMono.variable
         )}
       >
         <Navbar />
-        {children}
+        <main>{children}</main>
       </body>
     </html>
   )

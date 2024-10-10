@@ -1,0 +1,56 @@
+{
+  "LOGOS": [
+    {
+      "name": "LORMA",
+      "image": "/images/LORMA.jpg"
+    },
+    {
+      "name": "CCSE",
+      "image": "/images/CCSE.png"
+    },
+    {
+      "name": "GCRAIT",
+      "image": "/images/LOGO.jpg"
+    }
+  ],
+  "BRAND": {
+    "acronym": "GCRAIT",
+    "name": {
+      "text": "Global Conference on Robotics and Artificial Intelligence Technologies",
+      "highlights": [
+        { "word": "Robotics" },
+        { "word": "Artificial Intelligence Technologies" }
+      ]
+    },
+    "description": "Collaboration into the New and Innovative Future: Hardware Re-imagined",
+    "CTA": { "text": "Register Now", "href": "" },
+    "logo": "/images/GCRAIT.png"
+  },
+  "ABOUT": {
+    "heading": "About the Conference",
+    "subheading": "The Global Conference on Robotics and Artificial Intelligence Technologies (GCRAIT) is a premier event that brings together leading experts, innovators, and enthusiasts in the fields of robotics and AI. Under the theme, \"Collaboration into the New and Innovative Future: Hardware Re-imagined,\" this conference will serve as a platform for exploring groundbreaking advancements in AI-driven robotics and rethinking how hardware can be designed and integrated for the future. Attendees will engage in insightful discussions, hands-on workshops, and networking opportunities aimed at fostering collaboration and driving the next wave of innovation across industries.",
+    "image": "/images/ROBOT.png"
+  },
+  "FAQS": [
+    {
+      "question": "Lorem Ipsum Dolor Sit amet?",
+      "answer": "Suspendisse quis quam sapien. Etiam tempor, tellus vel laoreet euismod, mi urna vehicula sapien, vitae commodo augue urna ut felis. Fusce et ante faucibus, imperdiet nulla id, sagittis arcu."
+    },
+    {
+      "question": "Lorem Ipsum Dolor Sit amet?",
+      "answer": "Suspendisse quis quam sapien. Etiam tempor, tellus vel laoreet euismod, mi urna vehicula sapien, vitae commodo augue urna ut felis. Fusce et ante faucibus, imperdiet nulla id, sagittis arcu."
+    },
+    {
+      "question": "Lorem Ipsum Dolor Sit amet?",
+      "answer": "Suspendisse quis quam sapien. Etiam tempor, tellus vel laoreet euismod, mi urna vehicula sapien, vitae commodo augue urna ut felis. Fusce et ante faucibus, imperdiet nulla id, sagittis arcu."
+    },
+    {
+      "question": "Lorem Ipsum Dolor Sit amet?",
+      "answer": "Suspendisse quis quam sapien. Etiam tempor, tellus vel laoreet euismod, mi urna vehicula sapien, vitae commodo augue urna ut felis. Fusce et ante faucibus, imperdiet nulla id, sagittis arcu."
+    },
+    {
+      "question": "Lorem Ipsum Dolor Sit amet?",
+      "answer": "Suspendisse quis quam sapien. Etiam tempor, tellus vel laoreet euismod, mi urna vehicula sapien, vitae commodo augue urna ut felis. Fusce et ante faucibus, imperdiet nulla id, sagittis arcu."
+    }
+  ]
+}
