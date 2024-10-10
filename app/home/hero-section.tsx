@@ -24,7 +24,7 @@ const HeroSection = () => {
 
   return (
     <div
-      className="hero relative h-[300vh] w-full overflow-clip rounded-md bg-gradient-to-b from-[#086F5A] via-[#086F5A] via-90% to-white dark:border dark:border-white/[0.1] lg:pb-10"
+      className="hero relative h-[200vh] w-full overflow-clip rounded-md bg-gradient-to-b from-[#086F5A] via-[#086F5A] via-90% to-white dark:border dark:border-white/[0.1] lg:pb-10"
       ref={ref}
     >
       <GeminiEffect

@@ -9,12 +9,12 @@ export default function Home() {
     <div className="relative overflow-x-clip">
       <HeroSection />
 
-      <SectionLayout className="flex h-screen items-center justify-center">
+      <SectionLayout className="flex items-center justify-center lg:h-screen">
         <Heading text={data?.ABOUT?.heading} />
 
         <div className="flex flex-col gap-y-3 py-5 lg:flex-row lg:gap-16">
           <p
-            className="m-auto text-justify text-[4rem] font-normal lg:w-3/6 lg:text-xl lg:leading-relaxed"
+            className="m-auto text-justify text-lg font-normal lg:w-3/6 lg:text-xl lg:leading-relaxed"
             data-aos="fade"
           >
             The{' '}
@@ -42,7 +42,7 @@ export default function Home() {
               alt="LOGO"
               width={800}
               height={800}
-              className="h-[30rem] w-[30rem]"
+              className="h-full w-auto lg:h-[30rem] lg:w-[30rem]"
             />
           </div>
         </div>
