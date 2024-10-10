@@ -9,12 +9,12 @@ export default function Home() {
     <div className="relative overflow-x-clip">
       <HeroSection />
 
-      <SectionLayout className="flex items-center justify-center lg:h-screen">
+      <SectionLayout className="relative flex items-center justify-center lg:h-screen">
         <Heading text={data?.ABOUT?.heading} />
 
         <div className="flex flex-col gap-y-3 py-5 lg:flex-row lg:gap-16">
           <p
-            className="m-auto text-justify text-lg font-normal lg:w-3/6 lg:text-xl lg:leading-relaxed"
+            className="m-auto text-justify text-base font-normal lg:w-3/6 lg:text-xl lg:leading-relaxed"
             data-aos="fade"
           >
             The{' '}
@@ -22,19 +22,13 @@ export default function Home() {
               Global Conference on Robotics and Artificial Intelligence
               Technologies (GCRAIT)
             </span>{' '}
-            is a world-class event dedicated to the advancement and innovation
-            of robotics and AI. Bringing together top researchers, industry
-            professionals, and enthusiasts from around the globe, GCRAIT
-            provides a unique platform for sharing knowledge and exploring
-            cutting-edge developments in these rapidly evolving fields. The
-            conference will feature a diverse range of activities, including
-            expert-led talks on emerging trends, competitive events showcasing
-            breakthrough innovations, and hands-on workshops designed to foster
-            collaboration and skill-building. Whether you&apos;re an AI
-            researcher, a robotics engineer, or simply passionate about the
-            future of technology, GCRAIT offers an unparalleled opportunity to
-            connect with thought leaders, exchange ideas, and be part of the
-            global conversation shaping the future of robotics and AI.
+            is an event focused on the progress and innovation in robotics and
+            AI. It gathers researchers, industry experts, and enthusiasts from
+            different parts of the world, offering a space for sharing ideas and
+            exploring new developments in these fast-growing fields. The
+            conference will include various activities like talks from experts
+            on the latest trends, competitions highlighting new inventions, and
+            workshops aimed at encouraging collaboration and skill development.
           </p>
           <div className="w-full lg:w-2/5" data-aos="fade">
             <Image

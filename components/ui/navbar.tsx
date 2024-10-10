@@ -50,7 +50,7 @@ const Navbar = () => {
   return (
     <header
       className={cn(
-        'fixed z-50 w-screen border-b-[1px] border-b-[#DDDDDD] bg-white text-black backdrop-blur-[0.9rem] lg:border-0',
+        'fixed z-50 w-screen border-b-[1px] border-b-[#DDDDDD]/25 bg-white text-black backdrop-blur-[0.9rem]',
         {
           'bg-transparent text-white': isTransparent && pathname === '/',
         }
@@ -122,7 +122,7 @@ const Navbar = () => {
         </div>
 
         {isMenuOpen && (
-          <div className="absolute inset-x-0 top-[4.5rem] h-screen w-screen bg-neutral-300 p-8 text-black lg:hidden">
+          <div className="absolute inset-x-0 top-[4.35rem] h-screen w-screen border-t-[1px] border-[#e7e7e9] bg-white p-8 text-black lg:hidden">
             <ul className="flex h-full flex-col items-start justify-start gap-y-4">
               {LINKS.map((link, index) => (
                 <li
@@ -141,7 +141,7 @@ const Navbar = () => {
                     data-aos-delay={index * 250}
                     onClick={() => setIsMenuOpen(false)}
                     className={cn(
-                      'flex w-full items-center justify-between text-start font-rubikMono text-base text-neutral-600',
+                      'flex w-full items-center justify-between text-start font-play text-base text-neutral-600',
                       {
                         'text-emerald-800': pathname === link.href,
                       }

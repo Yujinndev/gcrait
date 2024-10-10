@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  z-index: 50;
+  background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb {
+  z-index: 50;
+  background-color: rgb(8, 111, 90);
+  border-radius: 20px;
+}
+
+.polygon-path {
+  clip-path: polygon(43% 0, 100% 0, 100% 0, 93% 100%, 0 100%, 8% 0);
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -80,24 +100,4 @@
   h4 {
     @apply font-play;
   }
-}
-
-::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-}
-
-::-webkit-scrollbar-track {
-  z-index: 50;
-  background-color: rgb(30, 30, 30);
-}
-
-::-webkit-scrollbar-thumb {
-  z-index: 50;
-  background-color: rgb(255, 255, 255);
-  border-radius: 20px;
-}
-
-.polygon-path {
-  clip-path: polygon(43% 0, 100% 0, 100% 0, 93% 100%, 0 100%, 8% 0);
 }

@@ -78,7 +78,7 @@ const HeroSection = () => {
 
           <Button
             variant="secondary"
-            className="group mx-auto w-max space-x-3 rounded-full bg-white p-4 px-8 hover:drop-shadow-[0_0_7px_rgb(110,231,183,.75)] lg:px-10 lg:py-6"
+            className="mx-auto w-max space-x-3 rounded-full bg-white p-4 px-8 transition-all duration-700 hover:drop-shadow-[0_0_7px_rgb(110,231,183,.75)] lg:px-10 lg:py-6"
             data-aos="fade-down"
             data-aos-offset="0"
             data-aos-delay="1500"
