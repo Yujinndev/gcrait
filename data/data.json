@@ -13,6 +13,28 @@
       "image": "/images/LOGO.jpg"
     }
   ],
+  "LINKS": [
+    {
+      "title": "Home",
+      "href": "/"
+    },
+    {
+      "title": "Registration",
+      "href": "/registration"
+    },
+    {
+      "title": "Committees",
+      "href": "/committees"
+    },
+    {
+      "title": "Judges",
+      "href": "/judges"
+    },
+    {
+      "title": "Partners",
+      "href": "/partners"
+    }
+  ],
   "BRAND": {
     "acronym": "GCRAIT",
     "name": {

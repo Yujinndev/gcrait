@@ -3,6 +3,12 @@ import data from '@/data/data.json'
 import HeroSection from '@/app/home/hero-section'
 import { SectionLayout } from '@/components/layout/section-layout'
 import { Heading } from '@/components/ui/heading'
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion'
 
 export default function Home() {
   return (
@@ -41,6 +47,83 @@ export default function Home() {
           </div>
         </div>
       </SectionLayout>
+
+      <div className="mx-auto max-w-screen-xl">
+        <div className="px-6 py-12">
+          <Heading text="Call for Paper Abstract" />
+          <p className="mx-auto text-justify font-dmSans font-light tracking-tighter text-black lg:w-8/12 lg:text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nisi
+            dui, ullamcorper et cursus et, pretium vitae diam. Suspendisse quis
+            quam sapien. Etiam tempor, tellus vel laoreet euismod, mi urna
+            vehicula sapien, vitae commodo augue urna ut felis. Fusce et ante
+            faucibus, imperdiet nulla id, sagittis arcu.
+          </p>
+        </div>
+
+        <div className="px-6 py-12">
+          <div className="flex h-auto w-auto flex-col gap-y-3 lg:flex-row lg:gap-8">
+            {Array.from({ length: 3 }).map((_, index) => (
+              <div
+                key={index}
+                className="w-auto overflow-hidden rounded-lg border border-slate-300 lg:w-1/3"
+              >
+                <Image
+                  src={data?.BRAND?.logo}
+                  alt="LOGO"
+                  width={800}
+                  height={800}
+                />
+                <p className="p-8 text-justify font-dmSans font-light tracking-tighter text-black">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                  nisi dui, ullamcorper et cursus et, pretium vitae diam. Proin
+                  id metus quis arcu ornare dapibus. Suspendisse quis quam
+                  sapien. Etiam tempor, tellus vel laoreet euismod, mi urna
+                  vehicula sapien, vitae commodo augue urna ut felis. Fusce et
+                  ante faucibus, imperdiet nulla id, sagittis arcu.
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <SectionLayout>
+          <Heading text="Frequently Asked Questions" />
+          <p className="mx-auto text-justify font-dmSans font-light tracking-tighter text-black lg:w-8/12 lg:text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nisi
+            dui, ullamcorper et cursus et, pretium vitae diam. Suspendisse quis
+            quam sapien. Etiam tempor, tellus vel laoreet euismod, mi urna
+            vehicula sapien, vitae commodo augue urna ut felis. Fusce et ante
+            faucibus, imperdiet nulla id, sagittis arcu.
+          </p>
+
+          <div className="flex h-auto w-auto flex-col gap-y-3 py-8 lg:flex-row lg:gap-8">
+            <div className="w-auto overflow-hidden rounded-lg border border-slate-300 lg:w-1/3">
+              <Image
+                src={data?.BRAND?.logo}
+                width={800}
+                height={800}
+                alt="LOGO"
+              />
+            </div>
+
+            <div className="flex w-auto flex-col gap-y-5 lg:w-2/3">
+              {data?.FAQS?.map((faq, index) => (
+                <Accordion
+                  type="single"
+                  collapsible
+                  key={index}
+                  defaultValue={index === 0 ? `item-${index}` : undefined}
+                >
+                  <AccordionItem value={`item-${index}`}>
+                    <AccordionTrigger>{faq.question}</AccordionTrigger>
+                    <AccordionContent>{faq.answer}</AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+              ))}
+            </div>
+          </div>
+        </SectionLayout>
+      </div>
     </div>
   )
 }

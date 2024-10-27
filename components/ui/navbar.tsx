@@ -1,10 +1,13 @@
 'use client'
 
-import { useEffect, useState } from 'react'
-import { LINKS } from '@/app/constants'
-import { Button } from '@/components/ui/button'
+import AOS from 'aos'
 import Link from 'next/link'
+import Image from 'next/image'
+import data from '@/data/data.json'
+import { useEffect, useState } from 'react'
+import { Button } from '@/components/ui/button'
 import { usePathname } from 'next/navigation'
+import { cn } from '@/lib/utils'
 import {
   ArrowRight,
   FacebookIcon,
@@ -12,10 +15,6 @@ import {
   MenuIcon,
   X,
 } from 'lucide-react'
-import AOS from 'aos'
-import { cn } from '@/lib/utils'
-import Image from 'next/image'
-import data from '@/data/data.json'
 
 const Navbar = () => {
   const [isTransparent, setIsTransparent] = useState<boolean>(true)
@@ -31,9 +30,9 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollY = window.scrollY
       if (pathname !== '/') return
 
+      const scrollY = window.scrollY
       const viewportHeight = document.querySelector('.hero')!.clientHeight - 200
 
       if (scrollY >= viewportHeight && pathname === '/') {
@@ -82,7 +81,7 @@ const Navbar = () => {
           </Link>
           <div className="hidden lg:block">
             <ul className="flex flex-col gap-3 lg:flex-row">
-              {LINKS.map((link) => (
+              {data?.LINKS?.map((link) => (
                 <li key={link.title}>
                   <Button
                     variant="link"
@@ -90,7 +89,6 @@ const Navbar = () => {
                       'text-white': isTransparent && pathname === '/',
                       'font-bold': pathname === link.href,
                     })}
-                    disabled={link.title !== 'Home'} // temporary
                   >
                     <Link href={link.href}>{link.title}</Link>
                   </Button>
@@ -124,7 +122,7 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="absolute inset-x-0 top-[4.35rem] h-screen w-screen border-t-[1px] border-[#e7e7e9] bg-white p-8 text-black lg:hidden">
             <ul className="flex h-full flex-col items-start justify-start gap-y-4">
-              {LINKS.map((link, index) => (
+              {data?.LINKS?.map((link, index) => (
                 <li
                   key={link.title}
                   className={cn(
