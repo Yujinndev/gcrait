@@ -24,7 +24,7 @@ const HeroSection = () => {
 
   return (
     <div
-      className="hero relative h-[200vh] w-full overflow-clip rounded-md bg-gradient-to-b from-[#086F5A] via-[#086F5A] via-90% to-white dark:border dark:border-white/[0.1] lg:pb-10"
+      className="hero relative h-[200vh] w-full overflow-clip bg-gradient-to-b from-[#030018] via-[#02183c] via-80% to-white pb-24 dark:border dark:border-white/[0.1] lg:pb-10"
       ref={ref}
     >
       <GeminiEffect
@@ -36,7 +36,7 @@ const HeroSection = () => {
           pathLengthFifth,
         ]}
       >
-        <div className="mx-auto flex max-w-screen-2xl flex-col justify-center space-y-6 p-6 md:px-16">
+        <div className="mx-auto flex max-w-screen-2xl flex-col justify-center space-y-6 p-6 pt-32 md:px-16 md:pt-[88px] lg:pt-4">
           <div className="z-30 flex items-center justify-center gap-2 pb-4 pt-8">
             {data?.LOGOS?.map((logo, index) => (
               <Image

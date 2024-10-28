@@ -19,12 +19,9 @@ export default function Home() {
         <Heading text={data?.ABOUT?.heading} />
 
         <div className="flex flex-col gap-y-3 py-5 lg:flex-row lg:gap-16">
-          <p
-            className="m-auto text-justify text-base font-normal lg:w-3/6 lg:text-xl lg:leading-relaxed"
-            data-aos="fade"
-          >
+          <p className="m-auto w-5/6 text-justify text-base font-normal lg:w-3/6 lg:text-xl lg:leading-relaxed">
             The{' '}
-            <span className="rounded-lg bg-green-100 px-2 font-play">
+            <span className="rounded-lg px-2 font-play font-bold">
               Global Conference on Robotics and Artificial Intelligence
               Technologies (GCRAIT)
             </span>{' '}
@@ -38,11 +35,11 @@ export default function Home() {
           </p>
           <div className="w-full lg:w-2/5" data-aos="fade">
             <Image
-              src={data?.ABOUT?.image}
-              alt="LOGO"
+              src={data?.BRAND?.logo}
+              alt="ROBOT"
               width={800}
               height={800}
-              className="h-full w-auto lg:h-[30rem] lg:w-[30rem]"
+              className="h-4/5 w-auto lg:h-[30rem] lg:w-[30rem]"
             />
           </div>
         </div>
@@ -51,7 +48,7 @@ export default function Home() {
       <div className="mx-auto max-w-screen-xl">
         <div className="px-6 py-12">
           <Heading text="Call for Paper Abstract" />
-          <p className="mx-auto text-justify font-dmSans font-light tracking-tighter text-black lg:w-8/12 lg:text-center">
+          <p className="mx-auto w-5/6 text-justify font-dmSans font-light tracking-tighter text-black lg:w-8/12 lg:text-center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nisi
             dui, ullamcorper et cursus et, pretium vitae diam. Suspendisse quis
             quam sapien. Etiam tempor, tellus vel laoreet euismod, mi urna
