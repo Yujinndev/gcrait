@@ -53,26 +53,55 @@
     "subheading": "The Global Conference on Robotics and Artificial Intelligence Technologies (GCRAIT) is a premier event that brings together leading experts, innovators, and enthusiasts in the fields of robotics and AI. Under the theme, \"Collaboration into the New and Innovative Future: Hardware Re-imagined,\" this conference will serve as a platform for exploring groundbreaking advancements in AI-driven robotics and rethinking how hardware can be designed and integrated for the future. Attendees will engage in insightful discussions, hands-on workshops, and networking opportunities aimed at fostering collaboration and driving the next wave of innovation across industries.",
     "image": "/images/ROBOT.png"
   },
+  "CPA": [
+    {
+      "subheading": "Information Technology",
+      "topics": [
+        "Blockchain Security",
+        "IoT Application",
+        "Cloud Computing and Virtualization"
+      ],
+      "CTA": { "text": "Submit Your Paper", "href": "" }
+    },
+    {
+      "subheading": "Computer Science",
+      "topics": [
+        "Machine Learning and Deep Learning",
+        "Natural Language Processing",
+        "Data Science and Big Data"
+      ],
+      "CTA": { "text": "Submit Your Paper", "href": "" }
+    },
+    {
+      "subheading": "Computer Engineering",
+      "topics": [
+        "Systems and Real-Time Computing",
+        "Robotics and Automation",
+        "Human-Computer Interaction (HCI)"
+      ],
+      "CTA": { "text": "Submit Your Paper", "href": "" }
+    }
+  ],
   "FAQS": [
     {
-      "question": "Lorem Ipsum Dolor Sit amet?",
-      "answer": "Suspendisse quis quam sapien. Etiam tempor, tellus vel laoreet euismod, mi urna vehicula sapien, vitae commodo augue urna ut felis. Fusce et ante faucibus, imperdiet nulla id, sagittis arcu."
+      "question": "Who can attend GCRAIT?",
+      "answer": "GCRAIT is open to anyone with an interest in robotics, AI, and technology, including students, researchers, professionals, and enthusiasts. Both industry and academic participants are welcome."
     },
     {
-      "question": "Lorem Ipsum Dolor Sit amet?",
-      "answer": "Suspendisse quis quam sapien. Etiam tempor, tellus vel laoreet euismod, mi urna vehicula sapien, vitae commodo augue urna ut felis. Fusce et ante faucibus, imperdiet nulla id, sagittis arcu."
+      "question": "How can I submit a paper for consideration?",
+      "answer": "To submit a paper, please visit the Call for Papers section on the official GCRAIT website. Follow the submission guidelines provided there and ensure your paper is in the specified format."
     },
     {
-      "question": "Lorem Ipsum Dolor Sit amet?",
-      "answer": "Suspendisse quis quam sapien. Etiam tempor, tellus vel laoreet euismod, mi urna vehicula sapien, vitae commodo augue urna ut felis. Fusce et ante faucibus, imperdiet nulla id, sagittis arcu."
+      "question": "Is there an option for virtual attendance?",
+      "answer": "Yes, GCRAIT offers both in-person and virtual attendance options to accommodate participants worldwide. More details on the registration process and fees can be found on our website."
     },
     {
-      "question": "Lorem Ipsum Dolor Sit amet?",
-      "answer": "Suspendisse quis quam sapien. Etiam tempor, tellus vel laoreet euismod, mi urna vehicula sapien, vitae commodo augue urna ut felis. Fusce et ante faucibus, imperdiet nulla id, sagittis arcu."
+      "question": "Are there any funding opportunities for students?",
+      "answer": "Yes, GCRAIT provides limited scholarships and travel grants for students who meet the criteria. Interested students should apply early, as grants are offered on a first-come, first-served basis."
     },
     {
-      "question": "Lorem Ipsum Dolor Sit amet?",
-      "answer": "Suspendisse quis quam sapien. Etiam tempor, tellus vel laoreet euismod, mi urna vehicula sapien, vitae commodo augue urna ut felis. Fusce et ante faucibus, imperdiet nulla id, sagittis arcu."
+      "question": "Will my paper be published after the conference?",
+      "answer": "Accepted papers will be published in the official GCRAIT conference proceedings and may be indexed in major academic databases, depending on quality and relevance."
     }
   ]
 }
