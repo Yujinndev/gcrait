@@ -10,12 +10,12 @@ export const Heading = ({
   return (
     <h2
       className={cn(
-        'polygon-path relative z-30 m-auto mb-4 w-max break-words border-[3px] border-[#030018] px-9 py-3 font-play text-2xl backdrop-blur-[1px] lg:py-5 lg:text-4xl',
+        'polygon-path relative z-30 mx-auto mb-4 flex w-full items-center justify-center text-balance break-words border-[3px] border-[#030018] px-9 py-3 font-play text-2xl backdrop-blur-[1px] sm:w-max lg:py-5 lg:text-4xl',
         className
       )}
       data-aos="fade"
     >
-      {text}
+      <span className="text-center">{text}</span>
     </h2>
   )
 }

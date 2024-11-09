@@ -24,7 +24,7 @@ const Navbar = () => {
   useEffect(() => {
     AOS.init({
       once: true,
-      duration: 400,
+      duration: 800,
     })
   }, [])
 
@@ -87,7 +87,7 @@ const Navbar = () => {
                     variant="link"
                     className={cn({
                       'text-white': isTransparent && pathname === '/',
-                      'font-bold': pathname === link.href,
+                      'font-bold hover:no-underline': pathname === link.href,
                     })}
                   >
                     <Link href={link.href}>{link.title}</Link>
@@ -106,17 +106,29 @@ const Navbar = () => {
             className={cn('h-8 w-8', {
               'text-white': isTransparent && pathname === '/',
             })}
+            asChild
           >
-            <FacebookIcon className="flex-shrink-0" />
+            <Link href={data?.CONTACTS?.fb} target="_blank">
+              <FacebookIcon className="flex-shrink-0" />
+            </Link>
           </Button>
           <Button
             variant="ghost"
             className={cn('h-8 w-8', {
               'text-white': isTransparent && pathname === '/',
             })}
+            asChild
           >
-            <InstagramIcon className="flex-shrink-0" />
+            <Link href={data?.CONTACTS?.ig}>
+              <InstagramIcon className="flex-shrink-0" />
+            </Link>
           </Button>
+          <Button
+            variant="ghost"
+            className={cn('h-8 w-8', {
+              'text-white': isTransparent && pathname === '/',
+            })}
+          ></Button>
         </div>
 
         {isMenuOpen && (

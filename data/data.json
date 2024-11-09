@@ -27,10 +27,6 @@
       "href": "/committees"
     },
     {
-      "title": "Judges",
-      "href": "/judges"
-    },
-    {
       "title": "Partners",
       "href": "/partners"
     }
@@ -48,48 +44,41 @@
     "CTA": { "text": "Register Now", "href": "" },
     "logo": "/images/GCRAIT.png"
   },
+  "CONTACTS": {
+    "ig": "#",
+    "fb": "https://www.facebook.com/profile.php?id=61566555735259",
+    "email": "gcrait@lorma.edu"
+  },
   "ABOUT": {
     "heading": "About the Conference",
     "subheading": "The Global Conference on Robotics and Artificial Intelligence Technologies (GCRAIT) is a premier event that brings together leading experts, innovators, and enthusiasts in the fields of robotics and AI. Under the theme, \"Collaboration into the New and Innovative Future: Hardware Re-imagined,\" this conference will serve as a platform for exploring groundbreaking advancements in AI-driven robotics and rethinking how hardware can be designed and integrated for the future. Attendees will engage in insightful discussions, hands-on workshops, and networking opportunities aimed at fostering collaboration and driving the next wave of innovation across industries.",
     "image": "/images/ROBOT.png"
   },
-  "CPA": [
-    {
-      "subheading": "Information Technology",
-      "topics": [
-        "Blockchain Security",
-        "IoT Application",
-        "Cloud Computing and Virtualization"
-      ],
-      "CTA": { "text": "Submit Your Paper", "href": "" }
-    },
-    {
-      "subheading": "Computer Science",
-      "topics": [
-        "Machine Learning and Deep Learning",
-        "Natural Language Processing",
-        "Data Science and Big Data"
-      ],
-      "CTA": { "text": "Submit Your Paper", "href": "" }
-    },
-    {
-      "subheading": "Computer Engineering",
-      "topics": [
-        "Systems and Real-Time Computing",
-        "Robotics and Automation",
-        "Human-Computer Interaction (HCI)"
-      ],
-      "CTA": { "text": "Submit Your Paper", "href": "" }
-    }
-  ],
+  "COMPETITONS": {
+    "heading": "Call for Submissions and Competitions",
+    "subheading": "We invite participants to showcase their skills and creativity in the following competitions; Whether you're presenting innovative solutions for sustainable development or competing in robotics challenges. Join us to push the boundaries of technology and innovation!",
+    "items": [
+      {
+        "title": "RoboTalks",
+        "description": "A showcase competition where entrants develop and demonstrate creative solutions for industries related to at least one of the 17 Sustainable Development Goals.",
+        "CTA": { "text": "Submit your Paper", "href": "/registration" }
+      },
+      {
+        "title": "Mobot Race",
+        "description": "The Robot Follow Line Race is a speed competition where robots (mobots) must autonomously follow a designated line on the track and complete the course in the shortest time possible.",
+        "CTA": { "text": "Join the Race", "href": "/registration" }
+      },
+      {
+        "title": "Sumo Bot",
+        "description": "It is a head-to-head robotics competition where teams compete by building and battling with other robots in an arena.",
+        "CTA": { "text": "Register Your Team", "href": "/registration" }
+      }
+    ]
+  },
   "FAQS": [
     {
       "question": "Who can attend GCRAIT?",
       "answer": "GCRAIT is open to anyone with an interest in robotics, AI, and technology, including students, researchers, professionals, and enthusiasts. Both industry and academic participants are welcome."
-    },
-    {
-      "question": "How can I submit a paper for consideration?",
-      "answer": "To submit a paper, please visit the Call for Papers section on the official GCRAIT website. Follow the submission guidelines provided there and ensure your paper is in the specified format."
     },
     {
       "question": "Is there an option for virtual attendance?",
@@ -97,11 +86,87 @@
     },
     {
       "question": "Are there any funding opportunities for students?",
-      "answer": "Yes, GCRAIT provides limited scholarships and travel grants for students who meet the criteria. Interested students should apply early, as grants are offered on a first-come, first-served basis."
-    },
-    {
-      "question": "Will my paper be published after the conference?",
-      "answer": "Accepted papers will be published in the official GCRAIT conference proceedings and may be indexed in major academic databases, depending on quality and relevance."
+      "answer": "Yes, GCRAIT offers prizes and awards for students who excel in specific categories. Details on the categories and criteria will be provided closer to the event."
     }
-  ]
+  ],
+  "COMMITTEES": {
+    "heading": "The Team Powering GCRAIT’s Mission",
+    "subheading": "Uniting experts and enthusiasts for an unforgettable conference. Our committee ensures every detail supports meaningful interactions.",
+    "organizing": {
+      "heads": [
+        {
+          "name": "FLORES, Kaishen A.",
+          "position": "Overall Head",
+          "image": "/images/committees/OverallHead.jpg"
+        },
+        {
+          "name": "CASTRO, Hendrick Paul L.",
+          "position": "Overall Vice-President Head",
+          "image": "/images/committees/OverallVPHead.jpg"
+        }
+      ],
+      "subheads": [
+        {
+          "name": "AJIDO, Andriq Klyne T.",
+          "position": "Audit President",
+          "image": "/images/committees/AuditPres.jpg"
+        },
+        {
+          "name": "GAERLAN, Jerick B.",
+          "position": "Audit Vice-President",
+          "image": "/images/committees/AuditVP.jpg"
+        },
+        {
+          "name": "ROSALES, Maira Francine R.",
+          "position": "Communications President",
+          "image": "/images/committees/CommunicationPres.jpg"
+        },
+        {
+          "name": "CORTEZ, Leo Anthony P.",
+          "position": "Communications Vice-President",
+          "image": "/images/committees/CommunicationVP.jpg"
+        },
+        {
+          "name": "VILLAREAL, Aileen B.",
+          "position": "Graphics President",
+          "image": "/images/committees/GraphicsPres.jpg"
+        },
+        {
+          "name": "AL-AUG, Osamah Basheer Y.",
+          "position": "Graphics Vice-President",
+          "image": "/images/GCRAIT.png"
+        },
+        {
+          "name": "ZAMBRANO, Daryll Matthews A.",
+          "position": "Media President",
+          "image": "/images/committees/MediaPres.jpg"
+        },
+        {
+          "name": "LAYSA, Mark Eugene U.",
+          "position": "Media Vice-President",
+          "image": "/images/committees/MediaVP.jpg"
+        },
+        {
+          "name": "QUIMPO, Paul Emmanuelle",
+          "position": "Tech President",
+          "image": "/images/GCRAIT.png"
+        },
+        {
+          "name": "SAN JUAN, Xavier Gael S.",
+          "position": "Tech Vice-President",
+          "image": "/images/committees/TechVP.jpg"
+        },
+        {
+          "name": "ANGELO, Mighty Angel P.",
+          "position": "Welcome President",
+          "image": "/images/committees/WelcomePres.jpg"
+        },
+        {
+          "name": "DELA CERNA, Jovan M.",
+          "position": "Welcome Vice-President",
+          "image": "/images/committees/WelcomeVP.jpg"
+        }
+      ]
+    }
+  }
 }
