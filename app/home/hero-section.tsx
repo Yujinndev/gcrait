@@ -55,7 +55,7 @@ const HeroSection = () => {
 
           <Heading
             text={`${data?.BRAND?.acronym}:`}
-            className="border-[5px] border-white/25"
+            className="w-max border-[5px] border-white/25"
           />
           <h1
             className="text-center text-white"
