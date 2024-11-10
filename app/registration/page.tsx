@@ -1,16 +1,15 @@
-'use client'
-
-import React from 'react'
+import { SectionLayout } from '@/components/layout/section-layout'
+import HeaderPage from '@/components/ui/header-page'
 
 const Registration = () => {
   return (
-    <div className="flex flex-col lg:items-center lg:justify-center">
-      <div className="mt-[4rem] flex h-[20vh] w-full space-y-5 bg-gradient-to-r from-[#030018] via-[#02183c] via-30% to-blue-950 dark:border">
-        <h1 className="m-auto text-center text-[42px] text-[#FED049]">
-          Registration
-        </h1>
-      </div>
-      <div className="m-5 lg:w-8/12">
+    <div className="relative overflow-x-hidden bg-neutral-50">
+      <HeaderPage
+        title="Unlock the Full GCRAIT Experience"
+        subheading="Your gateway to impactful sessions, competitions, and collaboration;  - secure your place today."
+      />
+
+      <SectionLayout>
         <div className="space-y-6 border border-gray-50 p-8 shadow-sm lg:space-y-10 lg:p-16">
           <div>
             <h1 className="text-[21px] font-semibold text-[#02183c] md:text-[24px]">
@@ -22,7 +21,7 @@ const Registration = () => {
                 <b>Competition: </b>December 10, 2024, 8:00 AM - 5:00 PM
               </p>
               <p>
-                <b>Venue: </b>La Union Convention Center, San Fernando City
+                <b>Venue: </b>LORMA Colleges CLI Urbiztondo, San Juan, La Union
               </p>
             </div>
           </div>
@@ -185,7 +184,7 @@ const Registration = () => {
             </div>
           </div>
         </div>
-      </div>
+      </SectionLayout>
     </div>
   )
 }

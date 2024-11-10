@@ -51,7 +51,8 @@ const Navbar = () => {
       className={cn(
         'fixed z-50 w-screen border-b-[1px] border-b-[#DDDDDD]/25 bg-white text-black backdrop-blur-[0.9rem]',
         {
-          'bg-transparent text-white': isTransparent && pathname === '/',
+          'bg-transparent text-white':
+            isTransparent && !isMenuOpen && pathname === '/',
         }
       )}
     >
@@ -61,7 +62,7 @@ const Navbar = () => {
             <Button
               variant="link"
               className={cn('p-0 text-black', {
-                'text-white': isTransparent && pathname === '/',
+                'text-white': isTransparent && !isMenuOpen && pathname === '/',
               })}
               onClick={() => setIsMenuOpen((prev) => !prev)}
             >
@@ -93,7 +94,7 @@ const Navbar = () => {
                     <Link href={link.href}>{link.title}</Link>
                   </Button>
                   {pathname === link.href && (
-                    <div className="m-auto mt-[2px] h-[2px] w-[35%] rounded-full bg-emerald-400" />
+                    <div className="m-auto mt-[2px] h-[2px] w-[35%] rounded-full bg-[#FED049]" />
                   )}
                 </li>
               ))}
@@ -104,7 +105,7 @@ const Navbar = () => {
           <Button
             variant="ghost"
             className={cn('h-8 w-8', {
-              'text-white': isTransparent && pathname === '/',
+              'text-white': isTransparent && !isMenuOpen && pathname === '/',
             })}
             asChild
           >
@@ -115,7 +116,7 @@ const Navbar = () => {
           <Button
             variant="ghost"
             className={cn('h-8 w-8', {
-              'text-white': isTransparent && pathname === '/',
+              'text-white': isTransparent && !isMenuOpen && pathname === '/',
             })}
             asChild
           >
@@ -123,12 +124,6 @@ const Navbar = () => {
               <InstagramIcon className="flex-shrink-0" />
             </Link>
           </Button>
-          <Button
-            variant="ghost"
-            className={cn('h-8 w-8', {
-              'text-white': isTransparent && pathname === '/',
-            })}
-          ></Button>
         </div>
 
         {isMenuOpen && (
@@ -140,7 +135,7 @@ const Navbar = () => {
                   className={cn(
                     'flex w-full border-b-[1px] border-neutral-400 py-4 text-black',
                     {
-                      'border-emerald-800': pathname === link.href,
+                      'border-slate-900': pathname === link.href,
                     }
                   )}
                 >
@@ -153,7 +148,7 @@ const Navbar = () => {
                     className={cn(
                       'flex w-full items-center justify-between text-start font-play text-base text-neutral-600',
                       {
-                        'text-emerald-800': pathname === link.href,
+                        'text-slate-900': pathname === link.href,
                       }
                     )}
                   >
@@ -161,14 +156,14 @@ const Navbar = () => {
                     <ArrowRight
                       color={
                         pathname === link.href
-                          ? 'rgb(6,95,70)'
-                          : 'rgb(115,115,115)'
+                          ? 'rgb(15, 23, 42)'
+                          : 'rgb(115, 115, 115)'
                       }
                       size={16}
                     />
                   </Link>
                   {pathname === link.href && (
-                    <div className="-mt-2 hidden h-[1px] w-full rounded-full bg-emerald-400 lg:block" />
+                    <div className="-mt-2 hidden h-[1px] w-full rounded-full bg-[#FED049] lg:block" />
                   )}
                 </li>
               ))}

@@ -10,7 +10,7 @@
     },
     {
       "name": "GCRAIT",
-      "image": "/images/LOGO.jpg"
+      "image": "/images/GCRAIT.png"
     }
   ],
   "LINKS": [
@@ -95,12 +95,12 @@
     "organizing": {
       "heads": [
         {
-          "name": "FLORES, Kaishen A.",
+          "name": "CASTRO, Hendrick Paul L.",
           "position": "Overall Head",
           "image": "/images/committees/OverallHead.jpg"
         },
         {
-          "name": "CASTRO, Hendrick Paul L.",
+          "name": "FLORES, Kaishen A.",
           "position": "Overall Vice-President Head",
           "image": "/images/committees/OverallVPHead.jpg"
         }

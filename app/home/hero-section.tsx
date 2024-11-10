@@ -48,7 +48,7 @@ const HeroSection = () => {
                 data-aos="fade-right"
                 data-aos-easing="ease-in-sine"
                 data-aos-delay={index * 250}
-                className="h-[4.5rem] w-[4.5rem] rounded-full border-[2px] border-[#DDDDDD] md:h-28 md:w-28"
+                className="h-[4.5rem] w-[4.5rem] rounded-full border-[2px] border-[#DDDDDD] bg-white md:h-28 md:w-28"
               />
             ))}
           </div>

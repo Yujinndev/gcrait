@@ -36,7 +36,7 @@ export default function Home() {
             <br />
             The conference is hosted by the College of Computer Studies and
             Engineering of LORMA Colleges. It is scheduled to take place on
-            December 10, 2024 in San Fernando City, La Union.
+            December 10, 2024 in San Juan, La Union.
             <br />
             <br />
             We are hosting GCRAIT to showcase the latest in robotics and AI,
@@ -57,7 +57,7 @@ export default function Home() {
       </SectionLayout>
 
       <SectionLayout>
-        <div className="px-6 py-12">
+        <div className="py-12 lg:px-6">
           <Heading text={data?.COMPETITONS?.heading} />
           <p className="m-auto my-8 w-full text-justify text-base font-normal md:my-0 md:text-center lg:w-5/6 lg:text-xl lg:leading-relaxed">
             {data?.COMPETITONS?.subheading}
@@ -96,7 +96,7 @@ export default function Home() {
       </SectionLayout>
 
       <SectionLayout>
-        <div className="px-6 py-12">
+        <div className="py-12 lg:px-6">
           <Heading text="Frequently Asked Questions" />
           <p className="m-auto my-8 w-full text-justify text-base font-normal md:my-0 md:text-center lg:w-5/6 lg:text-xl lg:leading-relaxed">
             These are some of the common questions that participants have about
@@ -105,7 +105,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="flex h-auto w-auto flex-col items-center gap-y-3 py-8 lg:flex-row lg:gap-8">
+        <div className="flex h-auto w-auto flex-col items-center gap-y-3 lg:flex-row lg:gap-8">
           <div className="w-full overflow-hidden rounded-lg border border-slate-300 md:w-auto lg:w-1/3">
             <Image
               src={data?.BRAND?.logo}
