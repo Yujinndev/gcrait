@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
 import { cn } from '@/lib/utils'
 import localFont from 'next/font/local'
-import Navbar from '@/components/ui/navbar'
+import Navbar from '@/components/layout/navbar'
 import './globals.css'
 import 'aos/dist/aos.css'
+import Footer from '@/components/layout/footer'
 
 const dmSans = localFont({
   src: './fonts/DMSans.ttf',
@@ -44,6 +45,7 @@ export default function RootLayout({
       >
         <Navbar />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   )

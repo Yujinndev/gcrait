@@ -11,10 +11,10 @@ const HeaderPage = ({
         className="flex h-full flex-col space-y-2 py-12"
         data-aos="fade-down"
       >
-        <h1 className="m-auto text-center text-3xl text-[#FED049] xl:text-4xl 2xl:text-5xl">
+        <h1 className="m-auto w-3/5 text-center text-3xl text-[#FED049] xl:text-4xl 2xl:text-5xl">
           {title}
         </h1>
-        <p className="m-auto w-2/5 text-center text-base font-light text-white lg:text-xl lg:leading-relaxed">
+        <p className="m-auto w-11/12 text-center text-base font-light text-white md:w-2/5 lg:text-xl lg:leading-relaxed">
           {subheading}
         </p>
       </div>

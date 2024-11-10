@@ -65,7 +65,7 @@
       },
       {
         "title": "Mobot Race",
-        "description": "The Robot Follow Line Race is a speed competition where robots (mobots) must autonomously follow a designated line on the track and complete the course in the shortest time possible.",
+        "description": "Mobot Race is a speed competition where robots (mobots) must autonomously follow a designated line on the track and complete the course in the shortest time possible.",
         "CTA": { "text": "Join the Race", "href": "/registration" }
       },
       {

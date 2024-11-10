@@ -10,7 +10,7 @@ const Registration = () => {
       />
 
       <SectionLayout>
-        <div className="space-y-6 border border-gray-50 p-8 shadow-sm lg:space-y-10 lg:p-16">
+        <div className="space-y-6 border border-gray-100 bg-white p-8 shadow-sm lg:space-y-10 lg:p-16">
           <div>
             <h1 className="text-[21px] font-semibold text-[#02183c] md:text-[24px]">
               I. Venue and Schedule
