@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { Button } from '@/components/ui/button'
-import data from '@/data/data.json'
+import { data } from '@/app/constants'
 
 const Footer = () => {
   return (

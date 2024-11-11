@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Image from 'next/image'
-import data from '@/data/data.json'
+import { data } from '@/app/constants'
 import { ArrowUpRight } from 'lucide-react'
 import { useScroll, useTransform } from 'framer-motion'
 import { Button } from '@/components/ui/button'
