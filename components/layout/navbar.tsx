@@ -33,8 +33,7 @@ const Navbar = () => {
       if (pathname !== '/') return
 
       const scrollY = window.scrollY
-      const viewportHeight = document.querySelector('.hero')!.clientHeight - 200
-
+      const viewportHeight = document.querySelector('.hero')!.clientHeight - 100
       if (scrollY >= viewportHeight && pathname === '/') {
         setIsTransparent(false)
       } else {
@@ -120,7 +119,7 @@ const Navbar = () => {
             })}
             asChild
           >
-            <Link href={data?.CONTACTS?.ig}>
+            <Link href={data?.CONTACTS?.ig} target="_blank">
               <InstagramIcon className="flex-shrink-0" />
             </Link>
           </Button>

@@ -45,14 +45,35 @@
     "logo": "/images/GCRAIT.png"
   },
   "CONTACTS": {
-    "ig": "#",
+    "ig": "https://www.instagram.com/gcrait.lorma/",
     "fb": "https://www.facebook.com/profile.php?id=61566555735259",
     "email": "gcrait@lorma.edu"
   },
   "ABOUT": {
     "heading": "About the Conference",
     "subheading": "The Global Conference on Robotics and Artificial Intelligence Technologies (GCRAIT) is a premier event that brings together leading experts, innovators, and enthusiasts in the fields of robotics and AI. Under the theme, \"Collaboration into the New and Innovative Future: Hardware Re-imagined,\" this conference will serve as a platform for exploring groundbreaking advancements in AI-driven robotics and rethinking how hardware can be designed and integrated for the future. Attendees will engage in insightful discussions, hands-on workshops, and networking opportunities aimed at fostering collaboration and driving the next wave of innovation across industries.",
-    "image": "/images/ROBOT.png"
+    "cards": [
+      {
+        "id": 1,
+        "className": "col-span-2",
+        "thumbnail": "https://images.unsplash.com/photo-1518314916381-77a37c2a49ae?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHJvYm90aWNzfGVufDB8fDB8fHww"
+      },
+      {
+        "id": 2,
+        "className": "col-span-1",
+        "thumbnail": "https://images.unsplash.com/photo-1717501217911-a598ed4c4023?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "id": 3,
+        "className": "col-span-1",
+        "thumbnail": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      {
+        "id": 4,
+        "className": "col-span-2",
+        "thumbnail": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      }
+    ]
   },
   "COMPETITONS": {
     "heading": "Call for Submissions and Competitions",
@@ -61,16 +82,25 @@
       {
         "title": "RoboTalks",
         "description": "A showcase competition where entrants develop and demonstrate creative solutions for industries related to at least one of the 17 Sustainable Development Goals.",
+        "robotRequirement": "Prototype / Actual project",
+        "maxPlayers": "5 members",
+        "category": "K12 to College Students",
         "CTA": { "text": "Submit your Paper", "href": "/registration" }
       },
       {
         "title": "Mobot Race",
         "description": "Mobot Race is a speed competition where robots (mobots) must autonomously follow a designated line on the track and complete the course in the shortest time possible.",
+        "robotRequirement": "1 Robot",
+        "maxPlayers": "1-3 members",
+        "category": "K12 to College Students",
         "CTA": { "text": "Join the Race", "href": "/registration" }
       },
       {
         "title": "Sumo Bot",
         "description": "It is a head-to-head robotics competition where teams compete by building and battling with other robots in an arena.",
+        "robotRequirement": "1 Robot",
+        "maxPlayers": "1-3 members",
+        "category": "K12 to College Students",
         "CTA": { "text": "Register Your Team", "href": "/registration" }
       }
     ]
@@ -134,7 +164,7 @@
         {
           "name": "AL-AUG, Osamah Basheer Y.",
           "position": "Graphics Vice-President",
-          "image": "/images/GCRAIT.png"
+          "image": "/images/committees/GraphicsVP.jpg"
         },
         {
           "name": "ZAMBRANO, Daryll Matthews A.",
@@ -149,7 +179,7 @@
         {
           "name": "QUIMPO, Paul Emmanuelle",
           "position": "Tech President",
-          "image": "/images/GCRAIT.png"
+          "image": "/images/committees/TechPres.jpg"
         },
         {
           "name": "SAN JUAN, Xavier Gael S.",

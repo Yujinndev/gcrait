@@ -14,26 +14,17 @@ const Committees = () => {
 
       <SectionLayout>
         <div className="py-12">
-          <div className="flex justify-between gap-x-16">
-            <Heading text="The Organizing Commitee" />
-          </div>
-          <div className="grid gap-8 py-4 md:grid-cols-2">
-            {data?.COMMITTEES?.organizing?.heads?.map((comm) => (
-              <CommitteeCard
-                key={comm.position}
-                committee={comm}
-                className="w-full"
-              />
+          <Heading text="The Organizing Commitee" />
+
+          <div className="grid gap-3 py-4 md:grid-cols-2 lg:gap-8">
+            {data?.COMMITTEES?.organizing?.heads?.map((committee, index) => (
+              <CommitteeCard key={index} committee={committee} />
             ))}
           </div>
 
-          <div className="grid gap-8 py-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
-            {data?.COMMITTEES?.organizing?.subheads?.map((comm) => (
-              <CommitteeCard
-                key={comm.position}
-                committee={comm}
-                className="w-full"
-              />
+          <div className="grid gap-3 py-4 sm:grid-cols-2 md:grid-cols-3 lg:gap-8 xl:grid-cols-4">
+            {data?.COMMITTEES?.organizing?.subheads?.map((committee, index) => (
+              <CommitteeCard key={index} committee={committee} />
             ))}
           </div>
         </div>

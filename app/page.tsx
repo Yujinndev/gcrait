@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import data from '@/data/data.json'
 import HeroSection from '@/app/home/hero-section'
@@ -11,17 +13,47 @@ import {
 } from '@/components/ui/accordion'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
+import { LayoutGrid } from '@/components/layout/layout-grid'
+import { Boxes } from '@/components/ui/background-boxes'
+import { cn } from '@/lib/utils'
 
 export default function Home() {
   return (
     <div className="relative overflow-x-clip">
-      <HeroSection />
+      <div className="hero">
+        <HeroSection />
+
+        <div className="relative flex min-h-96 w-full flex-col items-center justify-center overflow-hidden bg-[#02183c] py-16 pb-28">
+          <div className="pointer-events-none absolute inset-0 z-20 h-full w-full bg-[#02183c] [mask-image:radial-gradient(transparent,white)]" />
+
+          <Boxes />
+          <div className="z-20 h-[48rem]">
+            <Image
+              src={data?.BRAND?.logo}
+              alt="ROBOT"
+              width={950}
+              height={950}
+              className="h-full w-full object-contain"
+            />
+          </div>
+          <h1 className={cn('relative z-20 text-white')}>8:00 AM - 5:00 PM</h1>
+          <h1 className="relative z-20 mt-2 text-center text-5xl text-neutral-300 xl:text-6xl 2xl:text-7xl">
+            10 DECEMBER 2024
+          </h1>
+          <p className="relative z-20 mt-2 pb-12 text-center font-play text-lg font-bold text-neutral-300 md:text-2xl lg:text-3xl">
+            LORMA Colleges CLI Urbiztondo, San Juan, La Union
+          </p>
+        </div>
+      </div>
 
       <SectionLayout className="relative flex items-center justify-center">
         <Heading text={data?.ABOUT?.heading} />
 
         <div className="flex flex-col items-center justify-center gap-y-3 py-5 md:flex-row lg:gap-16">
-          <p className="m-auto text-justify text-base font-normal md:w-3/6 lg:text-xl lg:leading-relaxed">
+          <p
+            className="m-auto text-justify text-base font-normal md:w-3/6 lg:text-xl lg:leading-relaxed"
+            data-aos="fade"
+          >
             The{' '}
             <span className="rounded-lg px-2 font-play font-bold">
               Global Conference on Robotics and Artificial Intelligence
@@ -44,14 +76,11 @@ export default function Home() {
             connect with industry leaders, and inspiring future generations
             through learning and innovation.
           </p>
-          <div className="flex w-56 justify-center md:w-2/5">
-            <Image
-              src={data?.BRAND?.logo}
-              alt="ROBOT"
-              width={800}
-              height={800}
-              className="h-full w-full"
-            />
+          <div
+            className="flex justify-center md:w-2/5"
+            data-aos="zoom-out-left"
+          >
+            <LayoutGrid cards={data?.ABOUT?.cards} />
           </div>
         </div>
       </SectionLayout>
@@ -59,12 +88,18 @@ export default function Home() {
       <SectionLayout>
         <div className="py-12 lg:px-6">
           <Heading text={data?.COMPETITONS?.heading} />
-          <p className="m-auto my-8 w-full text-justify text-base font-normal md:my-0 md:text-center lg:w-5/6 lg:text-xl lg:leading-relaxed">
+          <p
+            className="m-auto my-8 w-full text-justify text-base font-normal md:my-0 md:text-center lg:w-5/6 lg:text-xl lg:leading-relaxed"
+            data-aos="fade"
+          >
             {data?.COMPETITONS?.subheading}
           </p>
         </div>
 
-        <div className="relative flex h-auto w-auto flex-col items-center gap-y-3 md:flex-row md:gap-8">
+        <div
+          className="relative flex h-auto w-auto flex-col items-center gap-y-3 md:flex-row md:gap-8"
+          data-aos="fade"
+        >
           {data?.COMPETITONS?.items?.map((item, index) => (
             <div
               key={index}
@@ -98,14 +133,20 @@ export default function Home() {
       <SectionLayout>
         <div className="py-12 lg:px-6">
           <Heading text="Frequently Asked Questions" />
-          <p className="m-auto my-8 w-full text-justify text-base font-normal md:my-0 md:text-center lg:w-5/6 lg:text-xl lg:leading-relaxed">
+          <p
+            className="m-auto my-8 w-full text-justify text-base font-normal md:my-0 md:text-center lg:w-5/6 lg:text-xl lg:leading-relaxed"
+            data-aos="fade"
+          >
             These are some of the common questions that participants have about
             the conference. If you have any other queries, feel free to reach
             out to us.
           </p>
         </div>
 
-        <div className="flex h-auto w-auto flex-col items-center gap-y-3 lg:flex-row lg:gap-8">
+        <div
+          className="flex h-auto w-auto flex-col items-center gap-y-3 lg:flex-row lg:gap-8"
+          data-aos="fade"
+        >
           <div className="w-full overflow-hidden rounded-lg border border-slate-300 md:w-auto lg:w-1/3">
             <Image
               src={data?.BRAND?.logo}

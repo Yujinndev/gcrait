@@ -1,5 +1,14 @@
 import { SectionLayout } from '@/components/layout/section-layout'
 import HeaderPage from '@/components/ui/header-page'
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@/components/ui/table'
+import data from '@/data/data.json'
 
 const Registration = () => {
   return (
@@ -10,7 +19,7 @@ const Registration = () => {
       />
 
       <SectionLayout>
-        <div className="space-y-6 border border-gray-100 bg-white p-8 shadow-sm lg:space-y-10 lg:p-16">
+        <div className="space-y-6 rounded-3xl border border-gray-100 bg-white p-8 shadow-sm lg:space-y-10 lg:p-16">
           <div>
             <h1 className="text-[21px] font-semibold text-[#02183c] md:text-[24px]">
               I. Venue and Schedule
@@ -31,72 +40,58 @@ const Registration = () => {
             </h1>
             <hr className="mt-2 border-t border-gray-300" />
             <div className="text-md space-y-2 py-5 lg:pl-4 lg:text-lg">
-              <div className="pb-5">
-                <p className="pb-2">
-                  There will be (3) Categories in this competition:
-                </p>
-                <ul className="list-disc pl-5">
-                  <li className="text-md font-semibold">RoboTalks</li>
-                  <li className="text-md font-semibold">Mobots Race</li>
-                  <li className="text-md font-semibold">
-                    Battle Bots/Sumo Bots
+              <p className="pb-2">
+                There will be <span className="font-bold">(3) Categories</span>{' '}
+                in this competition:
+              </p>
+              <ul className="list-disc pl-5">
+                {data?.COMPETITONS?.items?.map((competition) => (
+                  <li
+                    key={competition.title}
+                    className="text-md font-play font-semibold"
+                  >
+                    {competition.title}
                   </li>
-                </ul>
-              </div>
+                ))}
+              </ul>
 
-              <div className="mt-6 overflow-x-auto">
-                <table className="min-w-full divide-y divide-gray-200">
-                  <thead className="bg-gray-50">
-                    <tr>
-                      <th className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider">
+              <div className="overflow-x-auto rounded-lg">
+                <Table className="divide-y divide-gray-200 border">
+                  <TableHeader className="bg-gray-50">
+                    <TableRow>
+                      <TableHead className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider">
                         Competition
-                      </th>
-                      <th className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider">
+                      </TableHead>
+                      <TableHead className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider">
                         Robot Per Team
-                      </th>
-                      <th className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider">
+                      </TableHead>
+                      <TableHead className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider">
                         Max Players Per Team
-                      </th>
-                      <th className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider">
+                      </TableHead>
+                      <TableHead className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider">
                         Category
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-gray-200 bg-white">
-                    <tr>
-                      <td className="whitespace-nowrap px-6 py-4">RoboTalks</td>
-                      <td className="whitespace-nowrap px-6 py-4">
-                        prototype/actual project
-                      </td>
-                      <td className="whitespace-nowrap px-6 py-4">5 members</td>
-                      <td className="whitespace-nowrap px-6 py-4">
-                        K12 to College Students
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="whitespace-nowrap px-6 py-4">
-                        Mobot Race
-                      </td>
-                      <td className="whitespace-nowrap px-6 py-4">1 Robot</td>
-                      <td className="whitespace-nowrap px-6 py-4">
-                        1-3 members
-                      </td>
-                      <td className="whitespace-nowrap px-6 py-4">
-                        K12 to College Students
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="whitespace-nowrap px-6 py-4">SumoBot</td>
-                      <td className="whitespace-nowrap px-6 py-4">1 Robot</td>
-                      <td className="whitespace-nowrap px-6 py-4">
-                        1-3 members
-                      </td>
-                      <td className="whitespace-nowrap px-6 py-4">
-                        K12 to College Students
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                      </TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody className="divide-y divide-gray-200 bg-white">
+                    {data?.COMPETITONS?.items?.map((competition) => (
+                      <TableRow key={competition.title}>
+                        <TableCell className="px-6 py-4">
+                          <h2>{competition.title}</h2>
+                        </TableCell>
+                        <TableCell className="px-6 py-4">
+                          {competition.robotRequirement}
+                        </TableCell>
+                        <TableCell className="px-6 py-4">
+                          {competition.maxPlayers}
+                        </TableCell>
+                        <TableCell className="px-6 py-4">
+                          {competition.category}
+                        </TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
               </div>
             </div>
           </div>
