@@ -8,7 +8,7 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table'
-import data from '@/data/data.json'
+import { data } from '@/app/constants'
 
 const Registration = () => {
   return (

@@ -1,6 +1,6 @@
 import { SectionLayout } from '@/components/layout/section-layout'
 import { Heading } from '@/components/ui/heading'
-import data from '@/data/data.json'
+import { data } from '@/app/constants'
 import CommitteeCard from '@/components/ui/committee-card'
 import HeaderPage from '@/components/ui/header-page'
 

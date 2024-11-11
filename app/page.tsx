@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import data from '@/data/data.json'
+import { data } from '@/app/constants'
 import HeroSection from '@/app/home/hero-section'
 import { SectionLayout } from '@/components/layout/section-layout'
 import { Heading } from '@/components/ui/heading'
