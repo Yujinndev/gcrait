@@ -33,7 +33,7 @@ const Navbar = () => {
       if (pathname !== '/') return
 
       const scrollY = window.scrollY
-      const viewportHeight = document.querySelector('.hero')!.clientHeight - 100
+      const viewportHeight = document.querySelector('.hero')!.clientHeight - 500
       if (scrollY >= viewportHeight && pathname === '/') {
         setIsTransparent(false)
       } else {

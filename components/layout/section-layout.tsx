@@ -14,7 +14,9 @@ export const SectionLayout = ({
         className
       )}
     >
-      <div className="relative mx-auto w-full max-w-screen-xl">{children}</div>
+      <div className="relative mx-auto w-full max-w-screen-xl lg:px-16">
+        {children}
+      </div>
     </section>
   )
 }

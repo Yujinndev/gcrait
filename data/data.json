@@ -54,24 +54,20 @@
     "subheading": "The Global Conference on Robotics and Artificial Intelligence Technologies (GCRAIT) is a premier event that brings together leading experts, innovators, and enthusiasts in the fields of robotics and AI. Under the theme, \"Collaboration into the New and Innovative Future: Hardware Re-imagined,\" this conference will serve as a platform for exploring groundbreaking advancements in AI-driven robotics and rethinking how hardware can be designed and integrated for the future. Attendees will engage in insightful discussions, hands-on workshops, and networking opportunities aimed at fostering collaboration and driving the next wave of innovation across industries.",
     "cards": [
       {
-        "id": 1,
         "className": "col-span-2",
-        "thumbnail": "https://images.unsplash.com/photo-1518314916381-77a37c2a49ae?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHJvYm90aWNzfGVufDB8fDB8fHww"
+        "thumbnail": "/images/ROBOTS.jpg"
       },
       {
-        "id": 2,
         "className": "col-span-1",
-        "thumbnail": "https://images.unsplash.com/photo-1717501217911-a598ed4c4023?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "thumbnail": "/images/ROBOTS2.png"
       },
       {
-        "id": 3,
         "className": "col-span-1",
-        "thumbnail": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "thumbnail": "/images/LINETRACING.png"
       },
       {
-        "id": 4,
         "className": "col-span-2",
-        "thumbnail": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        "thumbnail": "/images/CODE.png"
       }
     ]
   },
