@@ -22,23 +22,22 @@ export const LayoutGrid = ({
       className={cn('relative grid h-full w-full grid-cols-3 gap-4', className)}
     >
       {cards.map((card) => (
-        <div key={card.id} className={cn(card.className)}>
-          <motion.div
-            className={cn(
-              card.className,
-              'relative h-full w-full overflow-hidden rounded-xl border bg-white'
-            )}
-            layoutId={`card-${card.id}`}
-          >
-            <Image
-              src={card.thumbnail}
-              height={500}
-              width={500}
-              className="inset-0 h-full w-full object-cover object-top transition duration-200"
-              alt="thumbnail"
-            />
-          </motion.div>
-        </div>
+        <motion.div
+          key={card.id}
+          className={cn(
+            'relative col-span-1 h-full w-full overflow-hidden rounded-xl border bg-white',
+            card.className
+          )}
+          layoutId={`card-${card.id}`}
+        >
+          <Image
+            src={card.thumbnail}
+            height={500}
+            width={500}
+            className="inset-0 h-full w-full object-cover object-top transition duration-200"
+            alt="thumbnail"
+          />
+        </motion.div>
       ))}
     </div>
   )
