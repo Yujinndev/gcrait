@@ -18,7 +18,7 @@ export const GeminiEffect = ({
   children?: React.ReactNode
 }) => {
   return (
-    <div className={cn('sticky top-20 text-white lg:top-40', className)}>
+    <div className={cn('sticky text-white sm:top-8 lg:top-40', className)}>
       {children}
 
       <svg

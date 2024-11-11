@@ -19,21 +19,23 @@ export default function Home() {
       <div className="hero relative">
         <HeroSection />
 
-        <div className="relative flex min-h-96 w-full flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-[#02183c] via-[#324e7a] via-40% to-white py-16 pb-32">
+        <div className="relative flex min-h-96 w-full flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-[#02183c] via-[#324e7a] via-40% to-white px-4 py-16 pb-24 text-center lg:pb-32">
           <div className="z-20 h-[32rem] lg:h-[48rem]">
             <Image
               src={data?.BRAND?.logo}
               alt="ROBOT"
-              width={950}
-              height={950}
+              width={800}
+              height={800}
               className="h-full w-full object-contain"
             />
           </div>
-          <h1 className="relative z-20 text-[#02183c]">8:00 AM - 5:00 PM</h1>
+          <h1 className="relative z-20 -mt-24 text-[#02183c] sm:-mt-16 md:-mt-12">
+            8:00 AM - 5:00 PM
+          </h1>
           <h1 className="relative z-20 mt-2 text-center text-5xl text-[#02183c] xl:text-6xl 2xl:text-7xl">
             10 DECEMBER 2024
           </h1>
-          <p className="relative z-20 mt-2 pb-12 text-center font-play text-lg font-bold text-[#02183c] md:text-2xl lg:text-3xl">
+          <p className="relative z-20 mt-2 text-center font-play text-lg font-bold text-[#02183c] md:text-2xl lg:text-3xl">
             LORMA Colleges CLI Urbiztondo, San Juan, La Union
           </p>
         </div>
@@ -145,15 +147,16 @@ export default function Home() {
         </div>
 
         <div
-          className="flex h-auto w-auto flex-col items-center gap-y-3 lg:flex-row lg:gap-8"
+          className="flex h-auto w-auto flex-col items-center gap-y-3 md:flex-row md:gap-8"
           data-aos="fade"
         >
-          <div className="w-full overflow-hidden rounded-lg border border-slate-300 md:w-auto lg:w-1/3">
+          <div className="h-52 w-full overflow-hidden rounded-lg border border-slate-300 md:h-full md:w-1/3">
             <Image
               src={data?.BRAND?.logo}
               width={800}
               height={800}
               alt="LOGO"
+              className="h-full object-contain"
             />
           </div>
 

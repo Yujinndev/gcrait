@@ -168,7 +168,7 @@ export const data = {
           image: '/images/committees/GraphicsPres.jpg',
         },
         {
-          name: 'AL-AUG, Osamah Basheer Y.',
+          name: 'AL-AUG, Osamah Basheer Yahya',
           position: 'Graphics Vice-President',
           image: '/images/committees/GraphicsVP.jpg',
         },
