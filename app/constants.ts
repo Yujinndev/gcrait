@@ -91,6 +91,24 @@ export const data = {
           { 'Robot Per Team': '1 robot / Prototype' },
           { 'Max Players': '1-5 members per talk' },
         ],
+        generalRules: [
+          'All submissions must be original work; any form of plagiarism will lead to disqualification.',
+          'Posters must be submitted by the deadline; late submissions will not be accepted.',
+          'Teams must adhere to the presentation time limits; failure to comply may result in point deductions.',
+          'Coaches are not permitted to assist in the competition, including during poster explanations or presentations.',
+          'Judges’ decisions are final.',
+        ],
+        deductions: [
+          { 'Late Submissions': '10% of total points for each day late.' },
+          {
+            'Plagiarism or Misrepresentation':
+              'Disqualification from the competition.',
+          },
+          {
+            'Failure to Adhere to Presentation Time Limits':
+              '5% deduction for exceeding the allocated presentation time.',
+          },
+        ],
       },
       {
         title: 'Mobot Race',
@@ -106,6 +124,14 @@ export const data = {
           { 'Robot Control': 'Fully Autonomous' },
           { 'Game Format': 'Round Robin' },
         ],
+        generalRules: [
+          'The race track will be approximately 3 meters long and 3 meters wide.',
+          'Robots must be fully autonomous and controlled by onboard systems.',
+          'No external control (remote control or external guidance) is allowed during the race.',
+          'Robots must pass a pre-race technical inspection.',
+          'Teams must adhere to the time limits for setup and race completion.',
+          'Judges’ decisions regarding penalties, deductions, and race outcomes are final.',
+        ],
       },
       {
         title: 'Sumo Bot',
@@ -120,6 +146,22 @@ export const data = {
           { 'Max Players': '1-3 players per team' },
           { 'Robot Control': 'Remote Controlled' },
           { 'Game Format': 'Round Robin' },
+        ],
+        generalRules: [
+          'The playing field will be 120 cm in diameter.',
+          'Robots must be fully remote-controlled',
+          'No Weaponry that causes uncontrolled projectiles or chemical hazards is allowed',
+          'Teams must adhere to the time limits for each battle.',
+        ],
+        deductions: [
+          { 'Failure to Comply with Weight/Size Limits': 'Disqualification' },
+          { 'Failure to adhere to safety rules': 'Disqualification' },
+          { 'Late Arrival for Battle': 'Forfeiture of the Match' },
+          { 'Unauthorized Assistance from Coach': '10% deduction' },
+          {
+            'Time Violations in Repair Periods':
+              '5% deduction for every extra minute used',
+          },
         ],
       },
     ],

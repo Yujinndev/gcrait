@@ -7,7 +7,7 @@ import { data } from '@/app/constants'
 const Footer = () => {
   return (
     <footer className="z-30 border-t-[1px] border-t-gray-200 text-black backdrop-blur-sm transition duration-200 ease-linear">
-      <div className="mx-auto h-full max-w-screen-xl py-10">
+      <div className="mx-auto h-full max-w-screen-xl py-4">
         <div className="grid h-full gap-x-4 lg:grid-cols-9">
           <div className="flex flex-col space-y-6 px-6 pt-12 lg:col-span-4">
             <Link href="/" className="flex w-max items-center gap-4">
@@ -129,7 +129,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex w-full flex-col items-center justify-center gap-1 bg-primary p-4 text-white lg:flex-row">
+      <div className="flex w-full flex-col items-center justify-center gap-1 bg-primary p-4 text-center text-white lg:flex-row">
         © 2024 - Present | GCRAIT Software Innovations
       </div>
     </footer>

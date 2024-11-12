@@ -11,7 +11,7 @@ import Link from 'next/link'
 import { SectionParagraph } from '@/components/layout/section-paragraph'
 import { Table, TableBody, TableCell, TableRow } from '@/components/ui/table'
 
-type TableEntry = { [key: string]: string }
+type KeyValuePair = { [key: string]: string }
 type Competition = {
   title: string
   overview: string
@@ -19,7 +19,9 @@ type Competition = {
   maxPlayers: number | string
   category: string
   CTA: { text: string; href: string }
-  table?: Partial<TableEntry>[]
+  table?: Partial<KeyValuePair>[]
+  generalRules: string[]
+  deductions?: Partial<KeyValuePair>[]
 }
 
 const CompetitionTabs = () => {
@@ -28,7 +30,7 @@ const CompetitionTabs = () => {
 
   return (
     <SectionLayout>
-      <div className="relative space-y-1">
+      <div className="relative space-y-4">
         <div className="flex w-full items-center justify-between gap-3 rounded-xl border bg-primary px-4 py-2">
           <Button
             variant="secondary"
@@ -75,16 +77,16 @@ const CompetitionTabs = () => {
 
 const CompetitionPaper = ({ competition }: { competition: Competition }) => {
   return (
-    <div className="space-y-6 rounded-xl border border-gray-100 bg-white p-8 shadow-sm lg:space-y-10 lg:p-16">
+    <div className="space-y-6 rounded-xl bg-white p-4 md:p-8 lg:space-y-10 lg:border lg:border-gray-100 lg:p-16 lg:shadow-sm">
       <SectionParagraph title={`Mechanics for ${competition.title}`}>
-        <div className="flex flex-col gap-4 pb-6 lg:flex-row">
-          <h3 className="text-lg text-primary md:text-xl lg:text-2xl">
+        <div className="grid gap-4 pb-6 lg:grid-cols-7">
+          <h3 className="text-lg text-primary md:text-xl lg:w-40 lg:text-2xl">
             Overview:
           </h3>
-          <p className="text-justify">{competition.overview}</p>
+          <p className="col-span-6 text-justify">{competition.overview}</p>
         </div>
 
-        <div className="mx-auto overflow-hidden rounded-lg font-play lg:w-3/4">
+        <div className="ml-auto overflow-hidden rounded-lg font-play lg:w-[85%]">
           <Table className="border text-lg">
             <TableBody>
               {competition.table?.map((obj, index) => (
@@ -102,6 +104,39 @@ const CompetitionPaper = ({ competition }: { competition: Competition }) => {
             </TableBody>
           </Table>
         </div>
+
+        <div className="grid gap-4 py-6 lg:grid-cols-7">
+          <h3 className="text-lg text-primary md:text-xl lg:w-40 lg:text-2xl">
+            General Rules:
+          </h3>
+          <ul className="col-span-6 text-justify">
+            {competition.generalRules?.map((rule, index) => (
+              <li key={index} className="flex gap-3">
+                <b>{index + 1}.</b>
+                <p>{rule}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {competition.deductions && (
+          <div className="grid gap-4 py-6 lg:grid-cols-7">
+            <h3 className="text-lg text-primary md:text-xl lg:w-40 lg:text-2xl">
+              Deduction:
+            </h3>
+            <div className="col-span-6 text-justify">
+              {competition.deductions?.map((obj, index) => (
+                <React.Fragment key={index}>
+                  {Object.entries(obj).map(([key, value], i) => (
+                    <p key={i}>
+                      <b>{key}:</b> <span>{value}</span>
+                    </p>
+                  ))}
+                </React.Fragment>
+              ))}
+            </div>
+          </div>
+        )}
       </SectionParagraph>
     </div>
   )
