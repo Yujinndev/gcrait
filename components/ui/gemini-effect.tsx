@@ -18,13 +18,13 @@ export const GeminiEffect = ({
   children?: React.ReactNode
 }) => {
   return (
-    <div className={cn('sticky text-white sm:top-8 lg:top-40', className)}>
+    <div className={cn('sticky top-40 text-white', className)}>
       {children}
 
       <svg
-        width="100%" // Full width of viewport
-        height="540" // Auto height to maintain aspect ratio
-        viewBox="0 0 1440 1080" // Flexible viewbox
+        width="100%"
+        height="540"
+        viewBox="0 0 1440 1080"
         preserveAspectRatio="none"
         xmlns="http://www.w3.org/2000/svg"
         className="absolute -top-16 z-10 w-full lg:-top-36"

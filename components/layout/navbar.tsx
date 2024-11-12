@@ -85,12 +85,15 @@ const Navbar = () => {
                 <li key={link.title}>
                   <Button
                     variant="link"
-                    className={cn({
+                    className={cn('h-full w-full', {
                       'text-white': isTransparent && pathname === '/',
                       'font-bold hover:no-underline': pathname === link.href,
                     })}
+                    asChild
                   >
-                    <Link href={link.href}>{link.title}</Link>
+                    <Link href={link.href} className="h-full w-full">
+                      {link.title}
+                    </Link>
                   </Button>
                   {pathname === link.href && (
                     <div className="m-auto mt-[2px] h-[2px] w-[35%] rounded-full bg-[#FED049]" />

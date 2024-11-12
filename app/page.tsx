@@ -16,7 +16,7 @@ import { BentoGrid, BentoGridItem } from '@/components/layout/bento-grid'
 export default function Home() {
   return (
     <div className="relative overflow-x-clip">
-      <div className="hero relative">
+      <div className="hero">
         <HeroSection />
 
         <div className="relative flex min-h-96 w-full flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-[#02183c] via-[#324e7a] via-40% to-white px-4 py-16 pb-24 text-center lg:pb-32">
@@ -120,7 +120,7 @@ export default function Home() {
                 <h2 className="mb-3 text-xl font-bold xl:text-2xl">
                   {item?.title}
                 </h2>
-                <p className="mb-3 line-clamp-6">{item?.description}</p>
+                <p className="mb-3 line-clamp-6">{item?.overview}</p>
                 <Button
                   className="absolute bottom-4 mx-auto flex w-full self-end px-8"
                   asChild

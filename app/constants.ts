@@ -80,30 +80,47 @@ export const data = {
     items: [
       {
         title: 'RoboTalks',
-        description:
-          'A showcase competition where entrants develop and demonstrate creative solutions for industries related to at least one of the 17 Sustainable Development Goals.',
-        robotRequirement: 'Prototype / Actual project',
-        maxPlayers: '5 members',
+        overview:
+          'A showcase competition where entrants develop and demonstrate creative solutions for industries related to at least one of the 17 Sustainable Development Goals. Entrants present comprehensive project posters, emphasizing how their concepts address practical obstacles and extend the frontiers of automation and technology.',
+        robotRequirement: '1 robot / Prototype',
+        maxPlayers: '1-5 members',
         category: 'K12 to College Students',
         CTA: { text: 'Submit your Paper', href: '/registration' },
+        table: [
+          { Theme: '17 SDG' },
+          { 'Robot Per Team': '1 robot / Prototype' },
+          { 'Max Players': '1-5 members per talk' },
+        ],
       },
       {
         title: 'Mobot Race',
-        description:
+        overview:
           'Mobot Race is a speed competition where robots (mobots) must autonomously follow a designated line on the track and complete the course in the shortest time possible.',
         robotRequirement: '1 Robot',
-        maxPlayers: '1-3 members',
+        maxPlayers: '1-3 players',
         category: 'K12 to College Students',
         CTA: { text: 'Join the Race', href: '/registration' },
+        table: [
+          { 'Robot Per Team': '1 Robot' },
+          { 'Max Players': '1-3 players per team' },
+          { 'Robot Control': 'Fully Autonomous' },
+          { 'Game Format': 'Round Robin' },
+        ],
       },
       {
         title: 'Sumo Bot',
-        description:
+        overview:
           'It is a head-to-head robotics competition where teams compete by building and battling with other robots in an arena.',
         robotRequirement: '1 Robot',
         maxPlayers: '1-3 members',
         category: 'K12 to College Students',
         CTA: { text: 'Register Your Team', href: '/registration' },
+        table: [
+          { 'Robot Per Team': '1 Sumobot' },
+          { 'Max Players': '1-3 players per team' },
+          { 'Robot Control': 'Remote Controlled' },
+          { 'Game Format': 'Round Robin' },
+        ],
       },
     ],
   },
