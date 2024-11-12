@@ -262,6 +262,58 @@ export const data = {
           image: '/images/committees/WelcomeVP.jpg',
         },
       ],
+      members: [],
+    },
+  },
+  PARTNERS: {
+    heading: 'The Team Powering GCRAIT’s Mission',
+    subheading:
+      'Uniting experts and enthusiasts for an unforgettable conference. Our committee ensures every detail supports meaningful interactions.',
+    items: {
+      collaborators: [
+        {
+          name: 'Philippine Drone Soccer Association',
+          desc: 'At the intersection of technology and sports, we proudly introduce the exciting world of drone soccer. As an official part of the Korean Soccer Association and Federation (FIDA), we strive to revolutionize the way we experience the beautiful e-sport.',
+          image: '/images/GCRAIT.png',
+          website: 'https://www.dronesoccerph.com/',
+        },
+        {
+          name: 'First Eduspec',
+          desc: 'First Eduspec is a multi-national company that offers innovative, technology-based educational solutions and services for the K-12 program of the education market.',
+          image: '/images/GCRAIT.png',
+          website: 'https://first-eduspec.com/',
+        },
+        {
+          name: 'Hytech Power',
+          desc: 'Hytec Power, Incorporated is an innovative company providing products and services for both academe and industry. We are the leading industrial and educational solutions provider in the Philippines.',
+          image: '/images/GCRAIT.png',
+          website: 'https://hytecpower.com/',
+        },
+      ],
+      partners: [
+        {
+          name: 'Lorma ICpEP.se',
+          image: '/images/committees/GCRAIT.png',
+          website: 'https://www.facebook.com/lc.icpep.se',
+        },
+        {
+          name: 'Lorma CCSE SBO',
+          image: '/images/committees/GCRAIT.png',
+          website: 'https://www.facebook.com/lorma.ccse.sbo',
+        },
+      ],
+      sponsors: [
+        {
+          name: 'Golden Ratio',
+          image: '/images/committees/GCRAIT.png',
+          website: 'https://www.facebook.com/goldenratiolu',
+        },
+        {
+          name: 'Arpi.Tech',
+          image: '/images/committees/GCRAIT.png',
+          website: 'https://www.facebook.com/profile.php?id=61559516004340',
+        },
+      ],
     },
   },
 }
