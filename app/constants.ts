@@ -262,9 +262,72 @@ export const data = {
           image: '/images/committees/WelcomeVP.jpg',
         },
       ],
-      members: [],
+      welcome: [
+        {
+          name: 'ANGELO, Mighty Angel P.',
+        },
+        {
+          name: 'DELA CERNA, Jovan M.',
+        },
+        {
+          name: 'RITO, Althea Jazel P.',
+        },
+        {
+          name: 'HIDALGO, Julius Ivan',
+        },
+        {
+          name: 'LIVARA, Kurt Ruzzell',
+        },
+        {
+          name: 'SALDIVAR, Miguel',
+        },
+        {
+          name: 'ABBAGO, Vince Jason',
+        },
+      ],
+      media: [
+        {
+          name: 'Zambrano, Daryll Matthews',
+        },
+        {
+          name: 'LAYSA, Mark Eugene U.',
+        },
+      ],
+      tech: [
+        {
+          name: 'QUIMPO, Paul Emmanuelle',
+        },
+        {
+          name: 'SAN JUAN, Xavier Gael S.',
+        },
+      ],
+      graphics: [
+        {
+          name: 'VILLAREAL, Aileen B.',
+        },
+        {
+          name: 'AL-AUG, Osamah Basheer',
+        },
+      ],
+      communications: [
+        {
+          name: 'ROSALES, Maira Francine R.',
+        },
+        {
+          name: 'CORTEZ, Leo Anthony P.',
+        },
+      ],
+      audit: [
+        {
+          name: 'AJIDO, Andriq Klyne T.',
+        },
+        {
+          name: 'GAERLAN, Jerick B.',
+        },
+      ],
     },
   },
+
   PARTNERS: {
     heading: 'The Team Powering GCRAIT’s Mission',
     subheading:
@@ -293,24 +356,24 @@ export const data = {
       partners: [
         {
           name: 'Lorma ICpEP.se',
-          image: '/images/committees/GCRAIT.png',
+          image: '/images/GCRAIT.png',
           website: 'https://www.facebook.com/lc.icpep.se',
         },
         {
           name: 'Lorma CCSE SBO',
-          image: '/images/committees/GCRAIT.png',
+          image: '/images/GCRAIT.png',
           website: 'https://www.facebook.com/lorma.ccse.sbo',
         },
       ],
       sponsors: [
         {
           name: 'Golden Ratio',
-          image: '/images/committees/GCRAIT.png',
+          image: '/images/GCRAIT.png',
           website: 'https://www.facebook.com/goldenratiolu',
         },
         {
           name: 'Arpi.Tech',
-          image: '/images/committees/GCRAIT.png',
+          image: '/images/GCRAIT.png',
           website: 'https://www.facebook.com/profile.php?id=61559516004340',
         },
       ],
