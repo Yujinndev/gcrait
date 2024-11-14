@@ -2,7 +2,6 @@ import HeaderPage from '@/components/ui/header-page'
 import { data } from '../constants'
 import Image from 'next/image'
 import { SectionLayout } from '@/components/layout/section-layout'
-import { Heading } from 'lucide-react'
 
 const Partners = () => {
   return (

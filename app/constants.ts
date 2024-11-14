@@ -264,12 +264,6 @@ export const data = {
       ],
       welcome: [
         {
-          name: 'ANGELO, Mighty Angel P.',
-        },
-        {
-          name: 'DELA CERNA, Jovan M.',
-        },
-        {
           name: 'RITO, Althea Jazel P.',
         },
         {
@@ -284,45 +278,96 @@ export const data = {
         {
           name: 'ABBAGO, Vince Jason',
         },
+        {
+          name: 'BAUTISTA, Renzo Lim',
+        },
       ],
       media: [
         {
-          name: 'Zambrano, Daryll Matthews',
+          name: 'AFROILAN, Vhince Cedrick',
         },
         {
-          name: 'LAYSA, Mark Eugene U.',
+          name: 'LAUERMAN, Patrick Xavier',
+        },
+        {
+          name: 'GANUELAS, Luke',
+        },
+        {
+          name: 'RAQUEPO, Pyter Ezra',
+        },
+        {
+          name: 'TORIBIO, Jasper',
         },
       ],
       tech: [
         {
-          name: 'QUIMPO, Paul Emmanuelle',
+          name: 'REYES, John Mark',
         },
         {
-          name: 'SAN JUAN, Xavier Gael S.',
+          name: 'GANDAWALI, Russel',
+        },
+        {
+          name: 'HUFALAR, Kylle',
+        },
+        {
+          name: 'AZUSANO, Tyronne',
+        },
+        {
+          name: 'PERIA, Mark Lemuel',
         },
       ],
       graphics: [
         {
-          name: 'VILLAREAL, Aileen B.',
+          name: 'MACAPUNDAG, Johari',
         },
         {
-          name: 'AL-AUG, Osamah Basheer',
+          name: 'SARMIENTO, Ashley',
+        },
+        {
+          name: 'TALHA, Ahmed',
+        },
+        {
+          name: 'ROMBAOA, Eloisa',
+        },
+        {
+          name: 'LIM, Joshua',
         },
       ],
       communications: [
         {
-          name: 'ROSALES, Maira Francine R.',
+          name: 'DY, Andrew',
         },
         {
-          name: 'CORTEZ, Leo Anthony P.',
+          name: 'ARANCES, Melby',
+        },
+        {
+          name: 'Disu, Jan Victor',
+        },
+        {
+          name: 'MACUGAY, John Patrick',
+        },
+        {
+          name: 'GALVAN, John Patrick',
+        },
+        {
+          name: 'MARTINEZ, Jovencio',
         },
       ],
       audit: [
         {
-          name: 'AJIDO, Andriq Klyne T.',
+          name: 'BERGANTIN, Adrian',
         },
         {
-          name: 'GAERLAN, Jerick B.',
+          name: 'CABASE, Angelo',
+        },
+        {
+          name: 'NEBRES, Eliakim',
+        },
+        {
+          name: 'NOBLEZA, Gerlene',
+        },
+        {
+          name: 'LOPEZ, Zylas',
         },
       ],
     },
