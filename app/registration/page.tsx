@@ -17,6 +17,8 @@ const Registration = () => {
   return (
     <div className="relative overflow-x-hidden bg-neutral-50">
       <HeaderPage
+        className="text-green-500 shadow-white drop-shadow-2xl"
+        style={{ textShadow: ' #1A5319 1px 0 10px' }}
         title="Unlock the Full GCRAIT Experience"
         subheading="Your gateway to impactful sessions, competitions, and collaboration; - secure your place today."
       />

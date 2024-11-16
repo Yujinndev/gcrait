@@ -30,7 +30,7 @@ const Committees = () => {
               )}
             </div>
             <Heading text="Commitee Members" className="mt-10" />
-            <div className="mt-10 grid grid-cols-2 gap-3 md:grid-cols-3 lg:gap-8 xl:grid-cols-4">
+            <div className="mt-10 grid grid-cols-2 gap-3 md:grid-cols-3 lg:ml-24 lg:gap-8 xl:grid-cols-3">
               <div className="space-y-1 p-4">
                 <p className="pb-2 text-lg font-bold text-[#02183c]">Welcome</p>
                 {data?.COMMITTEES?.organizing.welcome?.map((welcome, index) => (

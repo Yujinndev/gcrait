@@ -24,8 +24,18 @@ const HeroSection = () => {
 
   return (
     <div
-      className="relative w-full overflow-clip bg-[#02183c] dark:border dark:border-white/[0.1] sm:pb-12 md:h-[200vh] md:pb-24"
+      className="relative w-full overflow-clip bg-[#02183c] sm:pb-12 md:h-[200vh] md:pb-24"
       ref={ref}
+      style={{
+        backgroundImage: `
+          linear-gradient(to bottom, rgba(2, 24, 60, 0.7), #02183c 90%),
+          linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(2, 24, 60, 0.7) 100%),
+          url(${data.BRAND.bg})
+        `,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
     >
       <GeminiEffect
         pathLengths={[
@@ -55,7 +65,7 @@ const HeroSection = () => {
 
           <Heading
             text={`${data?.BRAND?.acronym}:`}
-            className="w-max border-[5px] border-white/25"
+            className="w-max border-[5px] border-white/25 text-green-500 shadow-white drop-shadow-2xl"
           />
           <h1
             className="text-center text-white"
@@ -63,8 +73,17 @@ const HeroSection = () => {
             data-aos-delay="1000"
           >
             Global Conference on{' '}
-            <span className="text-[#FED049]">Robotics</span> and{' '}
-            <span className="text-[#FED049]">
+            <span
+              className="text-green-500 shadow-white drop-shadow-2xl"
+              style={{ textShadow: ' #1A5319 1px 0 10px' }}
+            >
+              Robotics
+            </span>{' '}
+            and{' '}
+            <span
+              className="text-green-500 shadow-white drop-shadow-2xl"
+              style={{ textShadow: ' #1A5319 1px 0 10px' }}
+            >
               Artificial Intelligence Technologies
             </span>
           </h1>
@@ -95,3 +114,13 @@ const HeroSection = () => {
 }
 
 export default HeroSection
+
+//   return (
+//     <div
+//       className="relative w-full overflow-clip bg-[#02183c] bg-blend-overlay sm:pb-12 md:h-[200vh] md:pb-24"
+//       ref={ref}
+//       style={{
+//         backgroundImage: `url(${data.BRAND.bg})`,
+//         backgroundSize: 'cover',
+//         backgroundPosition: 'center',
+//       }}

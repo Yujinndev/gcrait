@@ -16,7 +16,7 @@ const CommitteeCard = ({
     <div
       key={committee.position}
       className={cn(
-        'relative mx-auto flex h-64 w-11/12 flex-col overflow-hidden rounded-xl border border-[#02183c]/20 bg-white md:h-80 md:w-full',
+        'relative mx-auto flex h-64 w-11/12 flex-col overflow-hidden rounded-xl bg-white drop-shadow-md md:h-80 md:w-full',
         className
       )}
       data-aos="fade"

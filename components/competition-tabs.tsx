@@ -49,7 +49,7 @@ const CompetitionTabs = () => {
                   className={cn(
                     'rounded-xl font-play text-base text-white lg:text-lg',
                     {
-                      'font-bold text-[#FED049] hover:no-underline':
+                      'font-bold text-green-500 hover:no-underline':
                         selectedTab === competition,
                     }
                   )}
@@ -61,7 +61,7 @@ const CompetitionTabs = () => {
                   <motion.div
                     layoutId="clickedbutton"
                     transition={{ type: 'spring', bounce: 0.3, duration: 0.6 }}
-                    className="absolute inset-x-0 bottom-0 m-auto mt-[2px] h-[2px] w-1/2 rounded-full bg-[#FED049]"
+                    className="absolute inset-x-0 bottom-0 m-auto mt-[2px] h-[2px] w-1/2 rounded-full bg-green-300"
                   />
                 )}
               </div>

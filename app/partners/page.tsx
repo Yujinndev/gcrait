@@ -25,7 +25,7 @@ const Partners = () => {
                   alt={collaborator.name}
                   width={800}
                   height={800}
-                  className="h-80 bg-[#02183c] object-contain p-4"
+                  className="h-80 bg-white object-contain p-4"
                 />
                 <div className="p-2 pt-8">
                   <div className="text-xl font-bold text-[#02183c]">
@@ -49,7 +49,7 @@ const Partners = () => {
                     alt={partner.name}
                     width={800}
                     height={800}
-                    className="w-80 bg-white object-contain p-4"
+                    className="h-80 w-80 bg-white object-contain p-4"
                   />
                   <div className="p-2 pt-8">
                     <div className="text-center text-xl font-bold text-[#02183c]">
@@ -72,7 +72,7 @@ const Partners = () => {
                     alt={sponsor.name}
                     width={800}
                     height={800}
-                    className="w-80 bg-white object-contain p-4"
+                    className="h-80 w-80 bg-white object-contain p-4"
                   />
                   <div className="p-2 pt-8">
                     <div className="text-center text-xl font-bold text-[#02183c]">

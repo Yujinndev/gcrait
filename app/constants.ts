@@ -44,6 +44,7 @@ export const data = {
       'Collaboration into the New and Innovative Future: Hardware Re-imagined',
     CTA: { text: 'Register Now', href: '' },
     logo: '/images/GCRAIT.png',
+    bg: '/images/LINEROBOT.jpg',
   },
   CONTACTS: {
     ig: 'https://www.instagram.com/gcrait.lorma/',
@@ -57,19 +58,19 @@ export const data = {
     cards: [
       {
         className: 'col-span-2',
-        thumbnail: '/images/ROBOTS.jpg',
+        thumbnail: '/images/RANDOM1.jpg',
       },
       {
         className: 'col-span-1',
-        thumbnail: '/images/ROBOTS2.png',
+        thumbnail: '/images/RANDOM4.png',
       },
       {
         className: 'col-span-1',
-        thumbnail: '/images/LINETRACING.png',
+        thumbnail: '/images/RANDOM3.jpg',
       },
       {
         className: 'col-span-2',
-        thumbnail: '/images/CODE.png',
+        thumbnail: '/images/RANDOM2.jpg',
       },
     ],
   },
@@ -264,7 +265,7 @@ export const data = {
       ],
       welcome: [
         {
-          name: 'RITO, Althea Jazel P.',
+          name: 'RITO, Althea Jazel',
         },
         {
           name: 'HIDALGO, Julius Ivan',
@@ -341,7 +342,7 @@ export const data = {
           name: 'ARANCES, Melby',
         },
         {
-          name: 'Disu, Jan Victor',
+          name: 'DISU, Jan Victor',
         },
         {
           name: 'MACUGAY, John Patrick',
@@ -372,7 +373,6 @@ export const data = {
       ],
     },
   },
-
   PARTNERS: {
     heading: 'The Team Powering GCRAIT’s Mission',
     subheading:
@@ -382,26 +382,26 @@ export const data = {
         {
           name: 'Philippine Drone Soccer Association',
           desc: 'At the intersection of technology and sports, we proudly introduce the exciting world of drone soccer. As an official part of the Korean Soccer Association and Federation (FIDA), we strive to revolutionize the way we experience the beautiful e-sport.',
-          image: '/images/GCRAIT.png',
+          image: '/images/collabs/dronesoccer.png',
           website: 'https://www.dronesoccerph.com/',
         },
         {
           name: 'First Eduspec',
           desc: 'First Eduspec is a multi-national company that offers innovative, technology-based educational solutions and services for the K-12 program of the education market.',
-          image: '/images/GCRAIT.png',
+          image: '/images/collabs/eduspec.png',
           website: 'https://first-eduspec.com/',
         },
         {
           name: 'Hytech Power',
           desc: 'Hytec Power, Incorporated is an innovative company providing products and services for both academe and industry. We are the leading industrial and educational solutions provider in the Philippines.',
-          image: '/images/GCRAIT.png',
+          image: '/images/collabs/hytecpower.png',
           website: 'https://hytecpower.com/',
         },
       ],
       partners: [
         {
           name: 'Lorma ICpEP.se',
-          image: '/images/GCRAIT.png',
+          image: '/images/partners/icpep.png',
           website: 'https://www.facebook.com/lc.icpep.se',
         },
         {
@@ -413,12 +413,12 @@ export const data = {
       sponsors: [
         {
           name: 'Golden Ratio',
-          image: '/images/GCRAIT.png',
+          image: '/images/sponsors/goldenratio.png',
           website: 'https://www.facebook.com/goldenratiolu',
         },
         {
           name: 'Arpi.Tech',
-          image: '/images/GCRAIT.png',
+          image: '/images/sponsors/arpitech.png',
           website: 'https://www.facebook.com/profile.php?id=61559516004340',
         },
       ],

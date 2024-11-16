@@ -96,7 +96,7 @@ const Navbar = () => {
                     </Link>
                   </Button>
                   {pathname === link.href && (
-                    <div className="m-auto mt-[2px] h-[2px] w-[35%] rounded-full bg-[#FED049]" />
+                    <div className="m-auto mt-[2px] h-[2px] w-[35%] rounded-full bg-green-500" />
                   )}
                 </li>
               ))}
