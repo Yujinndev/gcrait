@@ -263,112 +263,68 @@ export const data = {
           image: '/images/committees/WelcomeVP.jpg',
         },
       ],
-      welcome: [
+      members: [
         {
-          name: 'RITO, Althea Jazel',
+          type: 'Welcome Committee',
+          users: [
+            'RITO, Althea Jazel',
+            'HIDALGO, Julius Ivan',
+            'LIVARA, Kurt Ruzzell',
+            'SALDIVAR, Miguel',
+            'ABBAGO, Vince Jason',
+            'BAUTISTA, Renzo Lim',
+          ],
         },
         {
-          name: 'HIDALGO, Julius Ivan',
+          type: 'Media Committee',
+          users: [
+            'AFROILAN, Vhince Cedrick',
+            'LAUERMAN, Patrick Xavier',
+            'GANUELAS, Luke',
+            'RAQUEPO, Pyter Ezra',
+            'TORIBIO, Jasper',
+          ],
         },
         {
-          name: 'LIVARA, Kurt Ruzzell',
+          type: 'Tech Committee',
+          users: [
+            'REYES, John Mark',
+            'GANDAWALI, Russel',
+            'HUFALAR, Kylle',
+            'AZUSANO, Tyronne',
+            'PERIA, Mark Lemuel',
+          ],
         },
         {
-          name: 'SALDIVAR, Miguel',
+          type: 'Graphics Committee',
+          users: [
+            'MACAPUNDAG, Johari',
+            'SARMIENTO, Ashley',
+            'TALHA, Ahmed',
+            'ROMBAOA, Eloisa',
+            'LIM, Joshua',
+          ],
         },
         {
-          name: 'ABBAGO, Vince Jason',
+          type: 'Communications Committee',
+          users: [
+            'DY, Andrew',
+            'ARANCES, Melby',
+            'DISU, Jan Victor',
+            'MACUGAY, John Patrick',
+            'GALVAN, John Patrick',
+            'MARTINEZ, Jovencio',
+          ],
         },
         {
-          name: 'BAUTISTA, Renzo Lim',
-        },
-      ],
-      media: [
-        {
-          name: 'AFROILAN, Vhince Cedrick',
-        },
-        {
-          name: 'LAUERMAN, Patrick Xavier',
-        },
-        {
-          name: 'GANUELAS, Luke',
-        },
-        {
-          name: 'RAQUEPO, Pyter Ezra',
-        },
-        {
-          name: 'TORIBIO, Jasper',
-        },
-      ],
-      tech: [
-        {
-          name: 'REYES, John Mark',
-        },
-        {
-          name: 'GANDAWALI, Russel',
-        },
-        {
-          name: 'HUFALAR, Kylle',
-        },
-        {
-          name: 'AZUSANO, Tyronne',
-        },
-        {
-          name: 'PERIA, Mark Lemuel',
-        },
-      ],
-      graphics: [
-        {
-          name: 'MACAPUNDAG, Johari',
-        },
-        {
-          name: 'SARMIENTO, Ashley',
-        },
-        {
-          name: 'TALHA, Ahmed',
-        },
-        {
-          name: 'ROMBAOA, Eloisa',
-        },
-        {
-          name: 'LIM, Joshua',
-        },
-      ],
-      communications: [
-        {
-          name: 'DY, Andrew',
-        },
-        {
-          name: 'ARANCES, Melby',
-        },
-        {
-          name: 'DISU, Jan Victor',
-        },
-        {
-          name: 'MACUGAY, John Patrick',
-        },
-        {
-          name: 'GALVAN, John Patrick',
-        },
-        {
-          name: 'MARTINEZ, Jovencio',
-        },
-      ],
-      audit: [
-        {
-          name: 'BERGANTIN, Adrian',
-        },
-        {
-          name: 'CABASE, Angelo',
-        },
-        {
-          name: 'NEBRES, Eliakim',
-        },
-        {
-          name: 'NOBLEZA, Gerlene',
-        },
-        {
-          name: 'LOPEZ, Zylas',
+          type: 'Audit Committee',
+          users: [
+            'BERGANTIN, Adrian',
+            'CABASE, Angelo',
+            'NEBRES, Eliakim',
+            'NOBLEZA, Gerlene',
+            'LOPEZ, Zylas',
+          ],
         },
       ],
     },
