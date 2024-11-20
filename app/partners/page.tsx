@@ -1,7 +1,8 @@
 import HeaderPage from '@/components/ui/header-page'
-import { data } from '../constants'
-import Image from 'next/image'
+import { data } from '@/app/constants'
 import { SectionLayout } from '@/components/layout/section-layout'
+import PartnerCard from '@/components/ui/partner-card'
+import { Heading } from '@/components/ui/heading'
 
 const Partners = () => {
   return (
@@ -13,73 +14,37 @@ const Partners = () => {
 
       <SectionLayout className="lg:py-0">
         <div className="flex flex-col items-center justify-center pt-8">
-          <p className="text-left font-play text-2xl font-bold text-gray-800">
-            Our Major Collaborators
-          </p>
+          <Heading
+            text="Our Major Collaborators"
+            className="text-left font-play text-2xl font-bold text-gray-800"
+          />
 
           <div className="grid gap-10 py-4 md:grid-cols-3 lg:gap-8">
             {data?.PARTNERS?.items.collaborators?.map((collaborator, index) => (
-              <div key={index} className="">
-                <Image
-                  src={collaborator.image}
-                  alt={collaborator.name}
-                  width={800}
-                  height={800}
-                  className="h-80 bg-white object-contain p-4"
-                />
-                <div className="p-2 pt-8">
-                  <div className="text-xl font-bold text-[#02183c]">
-                    {collaborator.name}
-                  </div>
-                  <br />
-                  <div className="text-md">{collaborator.desc}</div>
-                </div>
-              </div>
+              <PartnerCard key={index} partner={collaborator} />
             ))}
           </div>
+
           <div className="flex w-full flex-col items-center justify-center space-y-4 rounded-lg py-8">
-            <p className="text-left font-play text-2xl font-bold text-[#02183c]">
-              Our Partners
-            </p>
+            <Heading
+              text="Our Partners"
+              className="text-left font-play text-2xl font-bold text-gray-800"
+            />
+
             <div className="m-3/5 grid gap-10 py-4 pb-20 md:grid-cols-2 lg:gap-8">
               {data?.PARTNERS?.items.partners?.map((partner, index) => (
-                <div key={index} className="">
-                  <Image
-                    src={partner.image}
-                    alt={partner.name}
-                    width={800}
-                    height={800}
-                    className="h-80 w-80 bg-white object-contain p-4"
-                  />
-                  <div className="p-2 pt-8">
-                    <div className="text-center text-xl font-bold text-[#02183c]">
-                      {partner.name}
-                    </div>
-                  </div>
-                </div>
+                <PartnerCard key={index} partner={partner} />
               ))}
             </div>
           </div>
           <div className="flex w-full flex-col items-center justify-center space-y-2 rounded-lg">
-            <p className="space-y-4 text-left font-play text-2xl font-bold text-gray-800">
-              Our Sponsors
-            </p>
+            <Heading
+              text="Our Sponsors"
+              className="text-left font-play text-2xl font-bold text-gray-800"
+            />
             <div className="m-3/5 grid gap-10 py-4 md:grid-cols-2 lg:gap-8">
               {data?.PARTNERS?.items.sponsors?.map((sponsor, index) => (
-                <div key={index} className="">
-                  <Image
-                    src={sponsor.image}
-                    alt={sponsor.name}
-                    width={800}
-                    height={800}
-                    className="h-80 w-80 bg-white object-contain p-4"
-                  />
-                  <div className="p-2 pt-8">
-                    <div className="text-center text-xl font-bold text-[#02183c]">
-                      {sponsor.name}
-                    </div>
-                  </div>
-                </div>
+                <PartnerCard key={index} partner={sponsor} />
               ))}
             </div>
           </div>
