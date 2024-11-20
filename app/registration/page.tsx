@@ -46,7 +46,7 @@ const Registration = () => {
                 asChild
               >
                 <Link
-                  href={'/docs/GCRAIT2024_Robotics_Competetion_Mechanics.pdf'}
+                  href={'/docs/GCRAIT2024_Programme.pdf'}
                   target="_blank"
                   className="w-full space-x-3"
                   download={true}
