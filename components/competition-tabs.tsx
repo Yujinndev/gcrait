@@ -1,19 +1,31 @@
 'use client'
 
 import React, { useState } from 'react'
+import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { data } from '@/app/constants'
 import { SectionLayout } from '@/components/layout/section-layout'
-import { Button } from './ui/button'
+import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { motion } from 'framer-motion'
 import { ArrowUpLeft } from 'lucide-react'
-import Link from 'next/link'
 import { SectionParagraph } from '@/components/layout/section-paragraph'
 import { Table, TableBody, TableCell, TableRow } from '@/components/ui/table'
+import { BentoGrid, BentoGridItem } from '@/components/layout/bento-grid'
 
 type KeyValuePair = { [key: string]: string }
+
+type PenaltyCategory = {
+  category: string
+  details: {
+    title?: string
+    description: string
+  }[]
+}
+
 type Competition = {
   title: string
+  images: string[]
   overview: string
   robotRequirement: string
   maxPlayers: number | string
@@ -21,10 +33,11 @@ type Competition = {
   CTA: { text: string; href: string }
   table?: Partial<KeyValuePair>[]
   generalRules: string[]
-  deductions?: Partial<KeyValuePair>[]
+  penalties: PenaltyCategory[]
 }
 
 const CompetitionTabs = () => {
+  const router = useRouter()
   const competitions = data?.COMPETITONS?.items
   const [selectedTab, setSelectedTab] = useState<Competition>(competitions[0])
 
@@ -37,9 +50,9 @@ const CompetitionTabs = () => {
             className="absolute hidden h-10 w-10 space-x-2 rounded-full font-play text-sm lg:flex"
             asChild
           >
-            <Link href={'/registration'}>
+            <Button onClick={() => router.back()}>
               <ArrowUpLeft className="flex-shrink-0" />
-            </Link>
+            </Button>
           </Button>
           <div className="flex w-full items-center justify-center px-4 py-2 lg:gap-3">
             {competitions?.map((competition, index) => (
@@ -79,6 +92,27 @@ const CompetitionPaper = ({ competition }: { competition: Competition }) => {
   return (
     <div className="space-y-6 rounded-xl bg-white p-4 md:p-8 lg:space-y-10 lg:border lg:border-gray-100 lg:p-16 lg:shadow-sm">
       <SectionParagraph title={`Mechanics for ${competition.title}`}>
+        <Button className="lg:absolute lg:right-0 lg:top-0" asChild>
+          <Link
+            href="https://forms.gle/EZDgpBEDpJwg1E767"
+            target="_blank"
+            className="ml-auto text-justify text-lg text-primary lg:text-left"
+          >
+            Pre-Register here for participants
+          </Link>
+        </Button>
+
+        <div className="flex justify-center py-4" data-aos="zoom-out-left">
+          <BentoGrid className="w-full lg:auto-rows-[20rem]">
+            {competition.images.map((item, i) => (
+              <BentoGridItem
+                key={i}
+                className={cn({ 'col-span-2': i === 0 || i === 3 })}
+                thumbnail={item}
+              />
+            ))}
+          </BentoGrid>
+        </div>
         <div className="grid gap-4 pb-6 lg:grid-cols-7">
           <h3 className="text-lg text-primary md:text-xl lg:w-40 lg:text-2xl">
             Overview:
@@ -93,7 +127,7 @@ const CompetitionPaper = ({ competition }: { competition: Competition }) => {
                 <TableRow key={index}>
                   {Object.entries(obj).map(([key, value], i) => (
                     <React.Fragment key={i}>
-                      <TableCell className="border">{key}:</TableCell>{' '}
+                      <TableCell className="border">{key}:</TableCell>
                       <TableCell className="border text-neutral-700">
                         {value}
                       </TableCell>
@@ -119,24 +153,29 @@ const CompetitionPaper = ({ competition }: { competition: Competition }) => {
           </ul>
         </div>
 
-        {competition.deductions && (
-          <div className="grid gap-4 py-6 lg:grid-cols-7">
-            <h3 className="text-lg text-primary md:text-xl lg:w-40 lg:text-2xl">
-              Deduction:
-            </h3>
-            <div className="col-span-6 text-justify">
-              {competition.deductions?.map((obj, index) => (
-                <React.Fragment key={index}>
-                  {Object.entries(obj).map(([key, value], i) => (
-                    <p key={i}>
-                      <b>{key}:</b> <span>{value}</span>
-                    </p>
+        <div className="grid gap-4 py-6 lg:grid-cols-7">
+          <h3 className="text-lg text-primary md:text-xl lg:w-40 lg:text-2xl">
+            Penalties:
+          </h3>
+          <div className="col-span-6 text-justify">
+            {competition?.penalties?.map((penalty, penaltyIndex) => (
+              <div key={penaltyIndex} className="space-y-4 pb-4">
+                <h2 className="text-base font-semibold">{penalty.category}</h2>
+
+                <ul className="list-disc space-y-2 pl-5">
+                  {penalty.details.map((detail, detailIndex) => (
+                    <li key={detailIndex} className="text-md text-justify">
+                      {'title' in detail && detail.title && (
+                        <span className="font-semibold">{detail.title}: </span>
+                      )}
+                      {detail.description}
+                    </li>
                   ))}
-                </React.Fragment>
-              ))}
-            </div>
+                </ul>
+              </div>
+            ))}
           </div>
-        )}
+        </div>
       </SectionParagraph>
     </div>
   )
