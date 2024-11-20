@@ -619,7 +619,7 @@ export const data = {
         {
           name: 'Lorma ICpEP.se',
           desc: 'Institute of Computer Engineers of the Philippines - Student Edition of LORMA Colleges, Inc.',
-          image: '/images/partners/ICPEP.png',
+          image: '/images/partners/icpep.png',
           fb: 'https://www.facebook.com/lc.icpep.se',
         },
         {
@@ -633,13 +633,13 @@ export const data = {
         {
           name: 'Golden Ratio',
           desc: "Golden Ratio, is specializing in Graphic Design, Printing Services, Logo Design, and Personalized Prints. Whether you're looking to create memorable souvenirs or elevate your brand with sleek and professional designs, we blend creativity with precision to bring your vision to life.",
-          image: '/images/sponsors/GOLDENRATIO.png',
+          image: '/images/sponsors/goldenratio.png',
           fb: 'https://www.facebook.com/goldenratiolu',
         },
         {
           name: 'Arpi.Tech',
           desc: '"Quality is what we pursue". We are committed to achieving excellence in every project, ensuring that our work meets the highest standards of quality and craftmanship.',
-          image: '/images/sponsors/ARPITECH.png',
+          image: '/images/sponsors/arpitech.png',
           fb: 'https://www.facebook.com/profile.php?id=61559516004340',
         },
       ],
