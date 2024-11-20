@@ -12,7 +12,7 @@ import { data } from '@/app/constants'
 import { Button } from '@/components/ui/button'
 import { SectionLayout } from '@/components/layout/section-layout'
 import { SectionParagraph } from '@/components/layout/section-paragraph'
-import { ArrowRight, Dot } from 'lucide-react'
+import { ArrowRight, Dot, Download } from 'lucide-react'
 
 const Registration = () => {
   return (
@@ -31,31 +31,59 @@ const Registration = () => {
                 December 10, 2024, 7:00 AM - 5:00 PM
               </p>
             </div>
-            <div className="flex flex-col gap-2 lg:flex-row">
+
+            <div className="flex flex-col gap-2 pb-4 lg:flex-row">
               <h3 className="space-y-2 text-xl lg:w-1/5">Venue:</h3>
               <p className="text-justify lg:text-left">
                 LORMA Colleges CLI Urbiztondo, San Juan, La Union
               </p>
             </div>
-            <div className="flex flex-col gap-2 py-2 lg:flex-row">
-              <Button asChild>
+
+            <div className="py-4">
+              <Button
+                className="w-full border-primary"
+                variant="outline"
+                asChild
+              >
                 <Link
-                  href="https://forms.gle/qo5GTmgUttoWCoi57"
+                  href={'/docs/GCRAIT2024_Robotics_Competetion_Mechanics.pdf'}
                   target="_blank"
-                  className="w-full text-justify text-base lg:text-left"
+                  className="w-full space-x-3"
+                  download={true}
                 >
-                  Pre-Register here for Attendees
+                  <Download /> <span>Download Program Flow</span>
                 </Link>
               </Button>
-              <Button asChild>
-                <Link
-                  href="https://forms.gle/EZDgpBEDpJwg1E767"
-                  target="_blank"
-                  className="w-full text-justify text-base lg:text-left"
-                >
-                  Pre-Register here for Competitions
-                </Link>
-              </Button>
+            </div>
+
+            <div className="rounded-2xl border bg-slate-100 p-8 py-4">
+              <h3 className="space-y-2 text-xl">Pre-Register Here:</h3>
+              <div className="flex flex-col gap-2 py-4 lg:flex-row">
+                <div className="w-full">
+                  <h3 className="font-sm space-y-2 font-sans lg:text-xl">
+                    For Attendees:
+                  </h3>
+                  <Link
+                    href="https://tinyurl.com/3mdyztvd"
+                    target="_blank"
+                    className="font-base w-full text-justify font-play text-primary underline underline-offset-8 lg:text-left lg:text-2xl"
+                  >
+                    https://tinyurl.com/3mdyztvd
+                  </Link>
+                </div>
+                <div className="w-full">
+                  <h3 className="font-sm space-y-2 font-sans lg:text-xl">
+                    For Competitions:
+                  </h3>
+                  <Link
+                    href="https://tinyurl.com/2rp6txt5"
+                    target="_blank"
+                    className="font-base w-full text-justify font-play text-primary underline underline-offset-8 lg:text-left lg:text-2xl"
+                  >
+                    https://tinyurl.com/2rp6txt5
+                  </Link>
+                </div>
+              </div>
             </div>
           </SectionParagraph>
 
@@ -106,6 +134,26 @@ const Registration = () => {
                           className="w-full"
                         >
                           View Full mechanics
+                        </Link>
+                      </Button>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell colSpan={4}>
+                      <Button
+                        className="w-full border-primary"
+                        variant="outline"
+                        asChild
+                      >
+                        <Link
+                          href={
+                            '/docs/GCRAIT2024_Robotics_Competetion_Mechanics.pdf'
+                          }
+                          target="_blank"
+                          className="w-full space-x-3"
+                          download={true}
+                        >
+                          <Download /> <span>Download Full Mechanics</span>
                         </Link>
                       </Button>
                     </TableCell>

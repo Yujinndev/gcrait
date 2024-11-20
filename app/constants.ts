@@ -132,7 +132,7 @@ export const data = {
               'Certificates of Appearance',
             ],
           },
-          { text: 'while winners will receive the following:' },
+          { text: 'While winners will receive the following:' },
         ],
         others: [
           {

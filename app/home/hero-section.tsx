@@ -76,14 +76,14 @@ const HeroSection = () => {
             Global Conference on{' '}
             <span
               className="text-primary shadow-white drop-shadow-2xl"
-              style={{ textShadow: ' #ffffff 2px 0 4px' }}
+              style={{ textShadow: ' #00ffcb 2px 0 4px' }}
             >
               Robotics
             </span>{' '}
             and{' '}
             <span
               className="text-primary shadow-white drop-shadow-2xl"
-              style={{ textShadow: ' #ffffff 2px 0 4px' }}
+              style={{ textShadow: '#00ffcb 2px 0 4px' }}
             >
               Artificial Intelligence Technologies
             </span>
