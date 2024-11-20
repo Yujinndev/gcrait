@@ -66,7 +66,7 @@ const HeroSection = () => {
 
           <Heading
             text={`${data?.BRAND?.acronym}:`}
-            className="w-max border-[5px] border-white/25 text-green-500 shadow-white drop-shadow-2xl"
+            className="w-max border-[5px] border-white/25 text-white shadow-white drop-shadow-2xl"
           />
           <h1
             className="text-center text-white"
@@ -75,15 +75,15 @@ const HeroSection = () => {
           >
             Global Conference on{' '}
             <span
-              className="text-green-500 shadow-white drop-shadow-2xl"
-              style={{ textShadow: ' #1A5319 1px 0 10px' }}
+              className="text-primary shadow-white drop-shadow-2xl"
+              style={{ textShadow: ' #ffffff 2px 0 4px' }}
             >
               Robotics
             </span>{' '}
             and{' '}
             <span
-              className="text-green-500 shadow-white drop-shadow-2xl"
-              style={{ textShadow: ' #1A5319 1px 0 10px' }}
+              className="text-primary shadow-white drop-shadow-2xl"
+              style={{ textShadow: ' #ffffff 2px 0 4px' }}
             >
               Artificial Intelligence Technologies
             </span>

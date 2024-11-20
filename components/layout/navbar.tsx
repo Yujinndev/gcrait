@@ -96,7 +96,7 @@ const Navbar = () => {
                     </Link>
                   </Button>
                   {pathname === link.href && (
-                    <div className="m-auto mt-[2px] h-[2px] w-[35%] rounded-full bg-green-500" />
+                    <div className="m-auto mt-[2px] h-[2px] w-[35%] rounded-full bg-primary" />
                   )}
                 </li>
               ))}
@@ -137,7 +137,7 @@ const Navbar = () => {
                   className={cn(
                     'flex w-full border-b-[1px] border-neutral-400 py-4 text-black',
                     {
-                      'border-green-500': pathname === link.href,
+                      'border-primary': pathname === link.href,
                     }
                   )}
                 >
@@ -150,7 +150,7 @@ const Navbar = () => {
                     className={cn(
                       'flex w-full items-center justify-between text-start font-play text-base text-neutral-600',
                       {
-                        'text-green-500': pathname === link.href,
+                        'text-primary': pathname === link.href,
                       }
                     )}
                   >
@@ -158,14 +158,14 @@ const Navbar = () => {
                     <ArrowRight
                       color={
                         pathname === link.href
-                          ? 'rgb(34, 197, 94)'
+                          ? 'rgb(5, 83, 67)'
                           : 'rgb(115, 115, 115)'
                       }
                       size={16}
                     />
                   </Link>
                   {pathname === link.href && (
-                    <div className="-mt-2 hidden h-[1px] w-full rounded-full bg-green-500 lg:block" />
+                    <div className="-mt-2 hidden h-[1px] w-full rounded-full bg-primary lg:block" />
                   )}
                 </li>
               ))}

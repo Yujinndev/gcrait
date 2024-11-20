@@ -28,7 +28,7 @@ const Registration = () => {
             <div className="flex flex-col gap-2 lg:flex-row">
               <h3 className="space-y-2 text-xl lg:w-1/5">Date and Time:</h3>
               <p className="text-justify lg:text-left">
-                December 10, 2024, 8:00 AM - 5:00 PM
+                December 10, 2024, 7:00 AM - 5:00 PM
               </p>
             </div>
             <div className="flex flex-col gap-2 lg:flex-row">
@@ -53,7 +53,7 @@ const Registration = () => {
                   target="_blank"
                   className="w-full text-justify text-base lg:text-left"
                 >
-                  Pre-Register here for Participants
+                  Pre-Register here for Competitions
                 </Link>
               </Button>
             </div>
@@ -146,7 +146,7 @@ const Registration = () => {
               <div className="space-y-4 md:pl-8">
                 {section?.others?.map((award, index) => (
                   <div key={index} className="space-y-2">
-                    <h3 className="text-xl">
+                    <h3 className="text-lg">
                       <b>
                         {index + 1}. {award.title}:
                       </b>

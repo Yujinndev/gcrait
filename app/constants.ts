@@ -44,7 +44,7 @@ export const data = {
       'Collaboration into the New and Innovative Future: Hardware Re-imagined',
     CTA: { text: 'Register Now', href: '' },
     logo: '/images/GCRAIT.png',
-    bg: '/images/LORMA-BG.jpg',
+    bg: '/images/BG-LORMA.jpg',
   },
   CONTACTS: {
     ig: 'https://www.instagram.com/gcrait.lorma/',
