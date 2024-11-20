@@ -12,6 +12,7 @@ import { data } from '@/app/constants'
 import { Button } from '@/components/ui/button'
 import { SectionLayout } from '@/components/layout/section-layout'
 import { SectionParagraph } from '@/components/layout/section-paragraph'
+import { ArrowRight, Dot } from 'lucide-react'
 
 const Registration = () => {
   return (
@@ -25,7 +26,7 @@ const Registration = () => {
         <div className="space-y-6 rounded-xl bg-white p-4 md:p-8 lg:space-y-10 lg:border lg:border-gray-100 lg:p-16 lg:shadow-sm">
           <SectionParagraph title="I. Venue and Schedule">
             <div className="flex flex-col gap-2 lg:flex-row">
-              <h3 className="space-y-2 text-xl lg:w-1/5">Competition:</h3>
+              <h3 className="space-y-2 text-xl lg:w-1/5">Date and Time:</h3>
               <p className="text-justify lg:text-left">
                 December 10, 2024, 8:00 AM - 5:00 PM
               </p>
@@ -35,6 +36,26 @@ const Registration = () => {
               <p className="text-justify lg:text-left">
                 LORMA Colleges CLI Urbiztondo, San Juan, La Union
               </p>
+            </div>
+            <div className="flex flex-col gap-2 py-2 lg:flex-row">
+              <Button asChild>
+                <Link
+                  href="https://forms.gle/qo5GTmgUttoWCoi57"
+                  target="_blank"
+                  className="w-full text-justify text-base lg:text-left"
+                >
+                  Pre-Register here for Attendees
+                </Link>
+              </Button>
+              <Button asChild>
+                <Link
+                  href="https://forms.gle/EZDgpBEDpJwg1E767"
+                  target="_blank"
+                  className="w-full text-justify text-base lg:text-left"
+                >
+                  Pre-Register here for Participants
+                </Link>
+              </Button>
             </div>
           </SectionParagraph>
 
@@ -101,62 +122,88 @@ const Registration = () => {
             </p>
           </SectionParagraph>
 
-          <SectionParagraph title="IV. Qualified Participants">
-            <ul className="list-decimal space-y-4 pl-5">
-              <li className="text-md text-justify lg:text-left">
-                The Global Conference on Robotics and Artificial Intelligence
-                Technologies competitions are{' '}
-                <b>open to all Schools at any level</b>
-              </li>
-              <li className="text-md text-justify lg:text-left">
-                The contestants are required to wear their school uniforms,
-                while coaches are required to wear formal attire.
-              </li>
-              <li className="text-md text-justify lg:text-left">
-                Each team must designate a team leader who will be the main
-                point of contact during the competition.
-              </li>
-              <li className="text-md text-justify lg:text-left">
-                All team members must be present during the competition and
-                registration.
-              </li>
-            </ul>
-          </SectionParagraph>
+          {data?.REGISTRATION?.sections?.map((section, index) => (
+            <SectionParagraph key={index} title={section.name}>
+              <ul className="list-decimal space-y-4 pl-5">
+                {section?.details?.map((detail, index) => (
+                  <li
+                    key={index}
+                    className="text-md text-justify lg:text-left"
+                    style={{ listStyleType: 'upper-alpha' }}
+                    dangerouslySetInnerHTML={{
+                      __html: detail.highlighted?.length
+                        ? detail.highlighted.reduce(
+                            (acc, highlight) =>
+                              acc.replace(highlight, `<b>${highlight}</b>`),
+                            detail.text
+                          )
+                        : detail.text,
+                    }}
+                  />
+                ))}
+              </ul>
 
-          <SectionParagraph title="V. Competition Proper and General Mechanics">
-            <ul className="list-decimal space-y-4 pl-5">
-              <li className="text-md text-justify lg:text-left">
-                Participating Teams must check in at the registration booth at
-                least 30 minutes before the competition. The contest will start
-                exactly at <b>1:30 PM</b> on <b>December 10, 2024</b>. Late
-                Participants will be disqualified or forfeited from the
-                competition.
-              </li>
-              <li className="text-md text-justify lg:text-left">
-                Only registered participants are allowed to participate in the
-                competition area.
-              </li>
-              <li className="text-md text-justify lg:text-left">
-                Coaches and other spectators must stay in the audience area.
-              </li>
-              <li className="text-md text-justify lg:text-left">
-                Coaches are not allowed to help the participants at the game
-                during the competition.
-              </li>
-              <li className="text-md text-justify lg:text-left">
-                Sumobot Game Format: Round Robin will be used during the
-                elimination. Knockout will be used during the semi-finals and
-                finals.
-              </li>
-              <li className="text-md text-justify lg:text-left">
-                Sportsmanship conduct is expected from players.
-              </li>
-              <li className="text-md text-justify lg:text-left">
-                Any misconduct, insults, foul language, or intentional action to
-                harm the opponents or robot shall be disqualified.
-              </li>
-            </ul>
-          </SectionParagraph>
+              <div className="space-y-4 md:pl-8">
+                {section?.others?.map((award, index) => (
+                  <div key={index} className="space-y-2">
+                    <h3 className="text-xl">
+                      <b>
+                        {index + 1}. {award.title}:
+                      </b>
+                    </h3>
+
+                    <div className="space-y-1 pl-8">
+                      {award.items.map((item, itemIndex) =>
+                        typeof item === 'string' ? (
+                          <p
+                            key={itemIndex}
+                            className="text-md flex items-center gap-2 text-justify"
+                          >
+                            <ArrowRight
+                              size={14}
+                              className="flex-shrink-0 text-primary"
+                            />
+                            {item}
+                          </p>
+                        ) : (
+                          Object.entries(item).map(
+                            ([key, values], nestedIndex) => (
+                              <div
+                                key={`${itemIndex}-${nestedIndex}`}
+                                className="text-md"
+                              >
+                                <p className="flex items-center gap-2 text-justify">
+                                  <ArrowRight
+                                    size={14}
+                                    className="flex-shrink-0 text-primary"
+                                  />
+                                  {key}:
+                                </p>
+                                <div className="space-y-1 pl-8">
+                                  {values.map((subItem, subIndex) => (
+                                    <p
+                                      key={subIndex}
+                                      className="flex items-center gap-2"
+                                    >
+                                      <Dot
+                                        size={20}
+                                        className="flex-shrink-0 text-primary"
+                                      />
+                                      {subItem}
+                                    </p>
+                                  ))}
+                                </div>
+                              </div>
+                            )
+                          )
+                        )
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </SectionParagraph>
+          ))}
         </div>
       </SectionLayout>
     </div>

@@ -109,11 +109,11 @@ export default function Home() {
               className="relative min-h-[32rem] w-full overflow-hidden rounded-lg border border-slate-300 md:w-1/3"
             >
               <Image
-                src={data?.BRAND?.logo}
+                src={item?.images[0]}
                 alt="LOGO"
                 width={600}
                 height={600}
-                className="h-56 w-full object-contain"
+                className="h-56 w-full object-cover object-top"
               />
 
               <div className="flex h-full w-full flex-col p-8 text-start font-dmSans tracking-tighter text-black">
@@ -125,7 +125,9 @@ export default function Home() {
                   className="absolute bottom-4 mx-auto flex w-full self-end px-8"
                   asChild
                 >
-                  <Link href={item?.CTA?.href}>{item?.CTA?.text}</Link>
+                  <Link href={'/registration/mechanics'}>
+                    {item?.CTA?.text}
+                  </Link>
                 </Button>
               </div>
             </div>
@@ -150,9 +152,9 @@ export default function Home() {
           className="flex h-auto w-auto flex-col items-center gap-y-3 md:flex-row md:gap-8"
           data-aos="fade"
         >
-          <div className="h-52 w-full overflow-hidden rounded-lg border border-slate-300 md:h-full md:w-1/3">
+          <div className="h-60 w-full overflow-hidden rounded-lg border border-slate-100 p-8 md:h-full md:w-1/3">
             <Image
-              src={data?.BRAND?.logo}
+              src={data?.FAQS?.image}
               width={800}
               height={800}
               alt="LOGO"
@@ -161,7 +163,7 @@ export default function Home() {
           </div>
 
           <div className="flex w-full flex-col gap-y-5 text-base font-normal md:w-auto lg:w-2/3">
-            {data?.FAQS?.map((faq, index) => (
+            {data?.FAQS?.items?.map((faq, index) => (
               <Accordion
                 type="single"
                 collapsible
