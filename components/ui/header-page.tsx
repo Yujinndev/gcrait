@@ -6,7 +6,7 @@ const HeaderPage = ({
   subheading?: string
 }) => {
   return (
-    <div className="mt-16 h-[16rem] w-full bg-gradient-to-r from-[#030018] via-[#02183c] via-30% to-blue-950 dark:border">
+    <div className="mt-16 w-full bg-gradient-to-r from-[#030018] via-[#02183c] via-30% to-blue-950 dark:border lg:h-[16rem]">
       <div
         className="flex h-full flex-col space-y-2 py-12"
         data-aos="fade-down"

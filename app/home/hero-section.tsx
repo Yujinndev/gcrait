@@ -8,6 +8,7 @@ import { useScroll, useTransform } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { Heading } from '@/components/ui/heading'
 import { GeminiEffect } from '@/components/ui/gemini-effect'
+import Link from 'next/link'
 
 const HeroSection = () => {
   const ref = React.useRef(null)
@@ -101,11 +102,14 @@ const HeroSection = () => {
             data-aos="fade-down"
             data-aos-offset="0"
             data-aos-delay="1500"
+            asChild
           >
-            <span className="text-[14px] text-black">
-              {data?.BRAND?.CTA?.text}
-            </span>
-            <ArrowUpRight color="black" size={18} />
+            <Link href="/registration">
+              <span className="text-[14px] text-black">
+                {data?.BRAND?.CTA?.text}
+              </span>
+              <ArrowUpRight color="black" size={18} />
+            </Link>
           </Button>
         </div>
       </GeminiEffect>
@@ -114,13 +118,3 @@ const HeroSection = () => {
 }
 
 export default HeroSection
-
-//   return (
-//     <div
-//       className="relative w-full overflow-clip bg-[#02183c] bg-blend-overlay sm:pb-12 md:h-[200vh] md:pb-24"
-//       ref={ref}
-//       style={{
-//         backgroundImage: `url(${data.BRAND.bg})`,
-//         backgroundSize: 'cover',
-//         backgroundPosition: 'center',
-//       }}

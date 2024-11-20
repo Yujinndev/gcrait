@@ -6,7 +6,7 @@ export const SectionParagraph = ({
   children?: React.ReactNode
 }) => {
   return (
-    <section>
+    <section className="relative">
       <h2 className="font-semibold text-[#02183c]">{title}</h2>
       <hr className="mt-2 border-t border-gray-300" />
 
