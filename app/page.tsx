@@ -30,13 +30,13 @@ export default function Home() {
               className="h-full w-full object-contain"
             />
           </div>
-          <h1 className="relative z-20 -mt-24 text-[#02183c] sm:-mt-16 md:-mt-12">
+          <h1 className="relative z-20 -mt-24 text-3xl text-[#02183c] sm:-mt-16 md:-mt-12 lg:text-6xl">
             8:00 AM - 5:00 PM
           </h1>
-          <h1 className="relative z-20 mt-2 text-center text-5xl text-[#02183c] xl:text-6xl 2xl:text-7xl">
+          <h1 className="relative z-20 mt-2 text-center text-4xl text-[#02183c] xl:text-6xl 2xl:text-7xl">
             10 DECEMBER 2024
           </h1>
-          <p className="relative z-20 mt-2 text-center font-play text-lg font-bold text-[#02183c] md:text-2xl lg:text-3xl">
+          <p className="relative z-20 mt-2 text-center font-play text-sm font-bold text-[#02183c] md:text-2xl lg:text-3xl">
             LORMA Colleges CLI Urbiztondo, San Juan, La Union
           </p>
         </div>
