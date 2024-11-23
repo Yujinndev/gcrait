@@ -12,6 +12,7 @@ import {
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { BentoGrid, BentoGridItem } from '@/components/layout/bento-grid'
+import { Download } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -135,6 +136,48 @@ export default function Home() {
         </div>
       </SectionLayout>
 
+      <div
+        className="relative w-full overflow-clip"
+        style={{
+          backgroundImage: `
+          linear-gradient(to bottom, rgba(2, 24, 60, 0.7), #02183c 60%),
+          linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(2, 24, 60, 0.7) 100%),
+          url(${data.BRAND.bg})
+        `,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
+        <SectionLayout className="">
+          <Heading text="Endorsed by Deped" className="border-0 text-white" />
+          <div className="flex flex-col items-center justify-center">
+            <Image
+              src={data?.BRAND?.endorsement}
+              alt="Endorsement Letter"
+              width={800}
+              height={800}
+              className="w-auto object-contain"
+            />
+            <div className="py-4">
+              <Button
+                className="w-full border-primary"
+                variant="outline"
+                asChild
+              >
+                <Link
+                  href={'/docs/GCRAIT2024_Endorsement.pdf'}
+                  target="_blank"
+                  className="w-full space-x-3"
+                  download={true}
+                >
+                  <Download /> <span>Download Endorsement Letter</span>
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </SectionLayout>
+      </div>
       <SectionLayout className="lg:px-6">
         <div className="py-12">
           <Heading text="Frequently Asked Questions" />

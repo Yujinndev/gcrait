@@ -45,6 +45,7 @@ export const data = {
     CTA: { text: 'Register Now', href: '' },
     logo: '/images/GCRAIT.png',
     bg: '/images/BG-LORMA.jpg',
+    endorsement: '/images/gcrait_endorsement.png',
   },
   CONTACTS: {
     ig: 'https://www.instagram.com/gcrait.lorma/',

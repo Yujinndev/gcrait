@@ -25,11 +25,11 @@ const HeroSection = () => {
 
   return (
     <div
-      className="relative w-full overflow-clip bg-[#02183c] sm:pb-12 md:h-[200vh] md:pb-24"
+      className="relative w-full overflow-clip bg-[#02183c] sm:pb-12 md:h-[160vh] md:pb-24"
       ref={ref}
       style={{
         backgroundImage: `
-          linear-gradient(to bottom, rgba(2, 24, 60, 0.7), #02183c 90%),
+          linear-gradient(to bottom, rgba(2, 24, 60, 0.7), #02183c 60%),
           linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(2, 24, 60, 0.7) 100%),
           url(${data.BRAND.bg})
         `,
@@ -75,15 +75,15 @@ const HeroSection = () => {
           >
             Global Conference on{' '}
             <span
-              className="text-primary shadow-white drop-shadow-2xl"
-              style={{ textShadow: ' #00ffcb 2px 0 4px' }}
+              className="text-[#39FF14] shadow-white drop-shadow-2xl"
+              // style={{ textShadow: ' #00ffcb 2px 0 4px' }}
             >
               Robotics
             </span>{' '}
             and{' '}
             <span
-              className="text-primary shadow-white drop-shadow-2xl"
-              style={{ textShadow: '#00ffcb 2px 0 4px' }}
+              className="text-[#39FF14] shadow-white drop-shadow-2xl"
+              // style={{ textShadow: '#00ffcb 2px 0 4px' }}
             >
               Artificial Intelligence Technologies
             </span>
