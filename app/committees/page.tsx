@@ -34,7 +34,7 @@ const Committees = () => {
             <div className="mt-10 grid grid-cols-2 gap-3 md:grid-cols-3 lg:ml-24 lg:gap-8 xl:grid-cols-3">
               {data?.COMMITTEES?.organizing?.members?.map((member, index) => (
                 <div key={index} className="space-y-1 p-4">
-                  <p className="pb-2 text-lg font-bold text-[#02183c]">
+                  <p className="pb-2 text-lg font-bold text-primary">
                     {member.type}
                   </p>
                   {member?.users?.map((user) => (

@@ -62,7 +62,7 @@ const CompetitionTabs = () => {
                   className={cn(
                     'rounded-xl font-play text-base text-white lg:text-lg',
                     {
-                      'font-bold text-green-500 hover:no-underline':
+                      'font-bold hover:no-underline':
                         selectedTab === competition,
                     }
                   )}
@@ -98,7 +98,7 @@ const CompetitionPaper = ({ competition }: { competition: Competition }) => {
             target="_blank"
             className="ml-auto text-justify text-lg text-primary lg:text-left"
           >
-            Pre-Register here for participants
+            Pre-Register here for Competitions
           </Link>
         </Button>
 

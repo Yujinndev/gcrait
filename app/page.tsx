@@ -12,6 +12,7 @@ import {
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { BentoGrid, BentoGridItem } from '@/components/layout/bento-grid'
+import { Download } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -29,13 +30,13 @@ export default function Home() {
               className="h-full w-full object-contain"
             />
           </div>
-          <h1 className="relative z-20 -mt-24 text-[#02183c] sm:-mt-16 md:-mt-12">
+          <h1 className="relative z-20 -mt-24 text-3xl text-[#02183c] sm:-mt-16 md:-mt-12 lg:text-6xl">
             8:00 AM - 5:00 PM
           </h1>
-          <h1 className="relative z-20 mt-2 text-center text-5xl text-[#02183c] xl:text-6xl 2xl:text-7xl">
+          <h1 className="relative z-20 mt-2 text-center text-4xl text-[#02183c] xl:text-6xl 2xl:text-7xl">
             10 DECEMBER 2024
           </h1>
-          <p className="relative z-20 mt-2 text-center font-play text-lg font-bold text-[#02183c] md:text-2xl lg:text-3xl">
+          <p className="relative z-20 mt-2 text-center font-play text-sm font-bold text-[#02183c] md:text-2xl lg:text-3xl">
             LORMA Colleges CLI Urbiztondo, San Juan, La Union
           </p>
         </div>
@@ -135,6 +136,48 @@ export default function Home() {
         </div>
       </SectionLayout>
 
+      <div
+        className="relative w-full overflow-clip"
+        style={{
+          backgroundImage: `
+          linear-gradient(to bottom, rgba(2, 24, 60, 0.7), #02183c 60%),
+          linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(2, 24, 60, 0.7) 100%),
+          url(${data.BRAND.bg})
+        `,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
+        <SectionLayout className="">
+          <Heading text="Endorsed by Deped" className="border-0 text-white" />
+          <div className="flex flex-col items-center justify-center">
+            <Image
+              src={data?.BRAND?.endorsement}
+              alt="Endorsement Letter"
+              width={800}
+              height={800}
+              className="w-auto object-contain"
+            />
+            <div className="py-4">
+              <Button
+                className="w-full border-primary"
+                variant="outline"
+                asChild
+              >
+                <Link
+                  href={'/docs/GCRAIT2024_Endorsement.pdf'}
+                  target="_blank"
+                  className="w-full space-x-3"
+                  download={true}
+                >
+                  <Download /> <span>Download Endorsement Letter</span>
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </SectionLayout>
+      </div>
       <SectionLayout className="lg:px-6">
         <div className="py-12">
           <Heading text="Frequently Asked Questions" />

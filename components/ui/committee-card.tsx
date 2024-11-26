@@ -34,7 +34,7 @@ const CommitteeCard = ({
           }
         )}
       />
-      <div className="absolute bottom-0 flex min-h-16 w-full bg-slate-800/80 px-4 text-white md:bottom-4 md:w-[90%] md:max-w-72 md:rounded-e-3xl">
+      <div className="absolute bottom-0 flex min-h-16 w-full bg-primary/80 px-4 text-white md:bottom-4 md:w-[94%] md:max-w-72 md:rounded-e-3xl">
         <div className="relative mx-auto my-auto flex flex-col py-2 text-center md:mx-0 md:text-left">
           <h3 className="line-clamp-2 w-full">{committee.name}</h3>
           <p className="line-clamp-1 w-full">{committee.position}</p>
