@@ -92,7 +92,10 @@ const CompetitionPaper = ({ competition }: { competition: Competition }) => {
   return (
     <div className="space-y-6 rounded-xl bg-white p-4 md:p-8 lg:space-y-10 lg:border lg:border-gray-100 lg:p-16 lg:shadow-sm">
       <SectionParagraph title={`Mechanics for ${competition.title}`}>
-        <Button className="lg:absolute lg:right-0 lg:top-0" asChild>
+        <Button
+          className="w-full lg:absolute lg:-top-2 lg:right-0 lg:w-max"
+          asChild
+        >
           <Link
             href="https://forms.gle/EZDgpBEDpJwg1E767"
             target="_blank"
@@ -114,10 +117,10 @@ const CompetitionPaper = ({ competition }: { competition: Competition }) => {
           </BentoGrid>
         </div>
         <div className="grid gap-4 pb-6 lg:grid-cols-7">
-          <h3 className="text-lg text-primary md:text-xl lg:w-40 lg:text-2xl">
+          <h3 className="w-full text-xl text-primary md:text-2xl lg:w-40">
             Overview:
           </h3>
-          <p className="col-span-6 text-justify">{competition.overview}</p>
+          <p className="text-justify lg:col-span-6">{competition.overview}</p>
         </div>
 
         <div className="ml-auto overflow-hidden rounded-lg font-play lg:w-[85%]">
@@ -140,10 +143,10 @@ const CompetitionPaper = ({ competition }: { competition: Competition }) => {
         </div>
 
         <div className="grid gap-4 py-6 lg:grid-cols-7">
-          <h3 className="text-lg text-primary md:text-xl lg:w-40 lg:text-2xl">
+          <h3 className="w-full text-xl text-primary md:text-2xl lg:w-40">
             General Rules:
           </h3>
-          <ul className="col-span-6 text-justify">
+          <ul className="text-justify lg:col-span-6">
             {competition.generalRules?.map((rule, index) => (
               <li key={index} className="flex gap-3">
                 <b>{index + 1}.</b>
@@ -154,10 +157,10 @@ const CompetitionPaper = ({ competition }: { competition: Competition }) => {
         </div>
 
         <div className="grid gap-4 py-6 lg:grid-cols-7">
-          <h3 className="text-lg text-primary md:text-xl lg:w-40 lg:text-2xl">
+          <h3 className="w-full text-xl text-primary md:text-2xl lg:w-40">
             Penalties:
           </h3>
-          <div className="col-span-6 text-justify">
+          <div className="text-justify lg:col-span-6">
             {competition?.penalties?.map((penalty, penaltyIndex) => (
               <div key={penaltyIndex} className="space-y-4 pb-4">
                 <h2 className="text-base font-semibold">{penalty.category}</h2>

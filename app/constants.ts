@@ -228,22 +228,15 @@ export const data = {
             details: [
               {
                 description:
-                  'Failure to Comply with Weight/Size Limits: Disqualification',
+                  'Late Submissions: 10% of total points for each day late.',
               },
               {
                 description:
-                  'Failure to adhere to safety rules: Disqualification',
-              },
-              {
-                description: 'Late Arrival for Battle: Forfeiture of the Match',
+                  'Failure to Adhere to Presentation Time Limits: 5% deduction for exceeding the allocated presentation time.',
               },
               {
                 description:
-                  'Unauthorized Assistance from Coach: 10% deduction',
-              },
-              {
-                description:
-                  'Time Violations in Repair Periods: 5% deduction for every extra minute used',
+                  'Plagiarism or Misrepresentation: Disqualification from the competition.',
               },
             ],
           },
@@ -625,8 +618,8 @@ export const data = {
         },
         {
           name: 'Lorma Basic Education',
-          desc: 'The Lorma Grade School is the ONLY educational institution in Regions 1, 2 and CAR that is Level 3 Accredited by the ACSCU-AAI. Level 3 is the highest accreditation given to Basic Education schools in the Philippines.',
-          image: '/images/GCRAIT.png',
+          desc: 'The LORMA Basic Education is the ONLY educational institution in Regions 1, 2 and CAR that is Level 3 Accredited by the ACSCU-AAI. Level 3 is the highest accreditation given to Basic Education schools in the Philippines.',
+          image: '/images/LORMA.jpg',
           fb: 'https://www.facebook.com/LormaGradeSchool/',
         },
         {
