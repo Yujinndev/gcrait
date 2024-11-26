@@ -24,29 +24,29 @@ const Partners = () => {
               <PartnerCard key={index} partner={collaborator} />
             ))}
           </div>
+        </div>
 
-          <div className="flex w-full flex-col items-center justify-center space-y-4 rounded-lg py-8">
-            <Heading
-              text="Our Partners"
-              className="text-left font-play text-2xl font-bold text-gray-800"
-            />
+        <div className="flex w-full flex-col items-center justify-center space-y-4 rounded-lg py-8">
+          <Heading
+            text="Our Partners"
+            className="text-left font-play text-2xl font-bold text-gray-800"
+          />
 
-            <div className="m-3/5 grid gap-10 py-4 pb-20 md:grid-cols-2 lg:gap-8">
-              {data?.PARTNERS?.items.partners?.map((partner, index) => (
-                <PartnerCard key={index} partner={partner} />
-              ))}
-            </div>
+          <div className="grid gap-10 py-4 md:grid-cols-3 lg:gap-8">
+            {data?.PARTNERS?.items.partners?.map((partner, index) => (
+              <PartnerCard key={index} partner={partner} />
+            ))}
           </div>
-          <div className="flex w-full flex-col items-center justify-center space-y-2 rounded-lg">
-            <Heading
-              text="Our Sponsors"
-              className="text-left font-play text-2xl font-bold text-gray-800"
-            />
-            <div className="m-3/5 grid gap-10 py-4 md:grid-cols-2 lg:gap-8">
-              {data?.PARTNERS?.items.sponsors?.map((sponsor, index) => (
-                <PartnerCard key={index} partner={sponsor} />
-              ))}
-            </div>
+        </div>
+        <div className="flex w-full flex-col items-center justify-center space-y-2 rounded-lg">
+          <Heading
+            text="Our Sponsors"
+            className="text-left font-play text-2xl font-bold text-gray-800"
+          />
+          <div className="m-3/5 grid gap-10 py-4 md:grid-cols-2 lg:gap-8">
+            {data?.PARTNERS?.items.sponsors?.map((sponsor, index) => (
+              <PartnerCard key={index} partner={sponsor} />
+            ))}
           </div>
         </div>
       </SectionLayout>

@@ -623,6 +623,12 @@ export const data = {
           fb: 'https://www.facebook.com/lc.icpep.se',
         },
         {
+          name: 'Lorma Basic Education',
+          desc: 'The Lorma Grade School is the ONLY educational institution in Regions 1, 2 and CAR that is Level 3 Accredited by the ACSCU-AAI. Level 3 is the highest accreditation given to Basic Education schools in the Philippines.',
+          image: '/images/GCRAIT.png',
+          fb: 'https://www.facebook.com/LormaGradeSchool/',
+        },
+        {
           name: 'Lorma CCSE SBO',
           desc: 'College of Computer Studies and Engineering - Student Body Organization.',
           image: '/images/partners/SBO.jpg',
