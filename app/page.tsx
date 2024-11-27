@@ -150,7 +150,7 @@ export default function Home() {
         }}
       >
         <SectionLayout className="">
-          <Heading text="Endorsed by Deped" className="border-0 text-white" />
+          <Heading text="Endorsed by DepEd" className="border-0 text-white" />
           <div className="flex flex-col items-center justify-center">
             <Image
               src={data?.BRAND?.endorsement}
