@@ -554,7 +554,7 @@ export const data = {
             'SARMIENTO, Ashley',
             'TALHA, Ahmed',
             'ROMBAOA, Eloisa',
-            'LIM, Joshua',
+            'BAUTISTA, Vittorio Joshua',
           ],
         },
         {
@@ -562,7 +562,7 @@ export const data = {
           users: [
             'DY, Andrew',
             'ARANCES, Melby',
-            'DISU, Jan Victor',
+            'DISU, Jan Viktor',
             'MACUGAY, John Patrick',
             'GALVAN, John Patrick',
             'MARTINEZ, Jovencio',
