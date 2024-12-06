@@ -170,7 +170,9 @@ export default function Home() {
                 asChild
               >
                 <Link
-                  href={'/docs/GCRAIT2024_Endorsement.pdf'}
+                  href={
+                    '/docs/GCRAIT_2024_Robotics_Competetion_Mechanics_v2.pdf'
+                  }
                   target="_blank"
                   className="w-full space-x-3"
                   download={true}
