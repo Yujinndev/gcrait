@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import { data } from '@/app/constants'
 import HeroSection from '@/app/home/hero-section'
@@ -13,6 +15,7 @@ import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { BentoGrid, BentoGridItem } from '@/components/layout/bento-grid'
 import { Download } from 'lucide-react'
+import Countdown from '@/components/countdown'
 
 export default function Home() {
   return (
@@ -37,8 +40,9 @@ export default function Home() {
             10 DECEMBER 2024
           </h1>
           <p className="relative z-20 mt-2 text-center font-play text-sm font-bold text-[#02183c] md:text-2xl lg:text-3xl">
-            LORMA Colleges CLI Urbiztondo, San Juan, La Union
+            LORMA Colleges Gymnasium, Urbiztondo, San Juan, La Union
           </p>
+          <Countdown />
         </div>
       </div>
 
