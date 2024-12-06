@@ -147,7 +147,7 @@ const Registration = () => {
                       >
                         <Link
                           href={
-                            '/docs/GCRAIT_2024_Robotics_Competetion_Mechanics.pdf'
+                            '/docs/GCRAIT_2024_Robotics_Competetion_Mechanics_v3.pdf'
                           }
                           target="_blank"
                           className="w-full space-x-3"
@@ -166,7 +166,7 @@ const Registration = () => {
           <SectionParagraph title="III. Submission of Entry Forms">
             <p className="text-justify lg:text-left">
               The deadline for the submission of entry forms is on{' '}
-              <b>December 09, 2024.</b>
+              <b>December 05, 2024.</b>
             </p>
           </SectionParagraph>
 

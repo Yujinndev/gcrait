@@ -73,7 +73,7 @@ const Countdown = () => {
         <div className="relative -right-[6px] h-2.5 w-2.5 rounded-full bg-[#191A24] sm:h-3 sm:w-3"></div>
       </div>
       <span className="text-center text-xs capitalize text-black sm:text-2xl">
-        {value === '01' ? label.slice(0, -1) : label}
+        {Number(value) <= 1 ? label.slice(0, -1) : label}
       </span>
     </div>
   )

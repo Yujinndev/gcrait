@@ -16,6 +16,17 @@ const Committees = () => {
           <div className="py-2">
             <Heading text="The Organizing Commitee" />
 
+            <div className="flex items-center justify-center py-4">
+              <CommitteeCard
+                className="md:w-1/2"
+                committee={{
+                  name: 'Johnny F. Verzola',
+                  position: 'Teacher-In-Charge',
+                  image: '/images/committees/TIC.png',
+                }}
+              />
+            </div>
+
             <div className="grid gap-3 py-4 md:grid-cols-2 lg:gap-8">
               {data?.COMMITTEES?.organizing?.heads?.map((committee, index) => (
                 <CommitteeCard key={index} committee={committee} />

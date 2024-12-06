@@ -30,7 +30,8 @@ const CommitteeCard = ({
           'relative h-full w-full object-contain brightness-125 md:object-cover',
           {
             'object-contain md:object-contain':
-              committee.position.startsWith('Overall'),
+              committee.position.startsWith('Overall') ||
+              committee.position === 'Teacher-In-Charge',
           }
         )}
       />

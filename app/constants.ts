@@ -99,8 +99,8 @@ export const data = {
         name: 'V. Competition Proper and General Mechanics',
         details: [
           {
-            text: 'Participating Teams must check in at the registration booth at least 30 minutes before the competition. The contest will start exactly at 1:30 PM on December 10, 2024. Late Participants will be disqualified or forfeited from the competition.',
-            highlighted: ['1:30 PM', 'December 10, 2024'],
+            text: 'Participating Teams must check in at the registration booth at least 30 minutes before the competition. The contest will start exactly at 11:00 AM on December 10, 2024. Late Participants will be disqualified or forfeited from the competition.',
+            highlighted: ['11:00 AM', 'December 10, 2024'],
           },
           {
             text: 'Only registered participants are allowed to participate in the competition area.',
