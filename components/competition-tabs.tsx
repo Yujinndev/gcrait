@@ -8,7 +8,7 @@ import { SectionLayout } from '@/components/layout/section-layout'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { motion } from 'framer-motion'
-import { ArrowUpLeft } from 'lucide-react'
+import { ArrowUpLeft, Download } from 'lucide-react'
 import { SectionParagraph } from '@/components/layout/section-paragraph'
 import { Table, TableBody, TableCell, TableRow } from '@/components/ui/table'
 import { BentoGrid, BentoGridItem } from '@/components/layout/bento-grid'
@@ -97,11 +97,12 @@ const CompetitionPaper = ({ competition }: { competition: Competition }) => {
           asChild
         >
           <Link
-            href="https://forms.gle/EZDgpBEDpJwg1E767"
+            href={'/docs/GCRAIT2024_RoboticsCompetetion_Mechanics.pdf'}
             target="_blank"
-            className="ml-auto text-justify text-lg text-primary lg:text-left"
+            className="w-full space-x-3"
+            download={true}
           >
-            Pre-Register here for Competitions
+            <Download /> <span>Download PDF version</span>
           </Link>
         </Button>
 

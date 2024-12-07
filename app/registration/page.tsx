@@ -75,13 +75,9 @@ const Registration = () => {
                   <h3 className="font-sm space-y-2 font-sans lg:text-xl">
                     For Competitions:
                   </h3>
-                  <Link
-                    href="https://tinyurl.com/2rp6txt5"
-                    target="_blank"
-                    className="font-base w-full text-justify font-play text-primary underline underline-offset-8 lg:text-left lg:text-2xl"
-                  >
-                    https://tinyurl.com/2rp6txt5
-                  </Link>
+                  <p className="font-base w-full cursor-pointer text-justify font-play text-gray-600 underline underline-offset-8 lg:text-left lg:text-2xl">
+                    Registration for competitions are over
+                  </p>
                 </div>
               </div>
             </div>
@@ -147,7 +143,7 @@ const Registration = () => {
                       >
                         <Link
                           href={
-                            '/docs/GCRAIT_2024_Robotics_Competetion_Mechanics_v4.pdf'
+                            '/docs/GCRAIT2024_RoboticsCompetetion_Mechanics.pdf'
                           }
                           target="_blank"
                           className="w-full space-x-3"
