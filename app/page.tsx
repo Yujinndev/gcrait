@@ -34,7 +34,7 @@ export default function Home() {
             />
           </div>
           <h1 className="relative z-20 -mt-24 text-3xl text-[#02183c] sm:-mt-16 md:-mt-12 lg:text-6xl">
-            8:00 AM - 5:00 PM
+            7:00 AM - 5:00 PM
           </h1>
           <h1 className="relative z-20 mt-2 text-center text-4xl text-[#02183c] xl:text-6xl 2xl:text-7xl">
             10 DECEMBER 2024

@@ -133,7 +133,7 @@ const Registration = () => {
                           href={'/registration/mechanics'}
                           className="w-full"
                         >
-                          View Full mechanics
+                          View Detailed mechanics
                         </Link>
                       </Button>
                     </TableCell>
@@ -147,7 +147,7 @@ const Registration = () => {
                       >
                         <Link
                           href={
-                            '/docs/GCRAIT_2024_Robotics_Competetion_Mechanics_v3.pdf'
+                            '/docs/GCRAIT_2024_Robotics_Competetion_Mechanics_v4.pdf'
                           }
                           target="_blank"
                           className="w-full space-x-3"
