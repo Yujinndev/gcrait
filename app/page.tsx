@@ -44,6 +44,19 @@ export default function Home() {
           </p>
           <Countdown />
         </div>
+
+        <div className="w-full">
+          <video
+            src="/videos/GCRAIT_TEASER.mp4"
+            className="w-full"
+            width="auto"
+            height="auto"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+        </div>
       </div>
 
       <SectionLayout>
