@@ -129,7 +129,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex w-full flex-col items-center justify-center gap-1 bg-primary p-4 text-center text-white lg:flex-row">
+      <div className="flex w-full flex-col items-center justify-center gap-1 bg-[#02183c] p-4 text-center text-white lg:flex-row">
         © 2024 - Present | GCRAIT Software Innovations
       </div>
     </footer>

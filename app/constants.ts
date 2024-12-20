@@ -30,6 +30,10 @@ export const data = {
       title: 'Partners',
       href: '/partners',
     },
+    {
+      title: 'Blogs',
+      href: '/blogs',
+    },
   ],
   BRAND: {
     acronym: 'GCRAIT',
@@ -45,6 +49,7 @@ export const data = {
     CTA: { text: 'Register Now', href: '' },
     logo: '/images/GCRAIT.png',
     bg: '/images/BG-LORMA.jpg',
+    headerBG: '/images/BG-HEADER.jpg',
     endorsement: '/images/gcrait_endorsement.png',
   },
   CONTACTS: {

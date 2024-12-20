@@ -94,11 +94,11 @@ const Countdown = () => {
   return (
     <div className="mt-6 py-6">
       <div className="flex h-full w-full flex-col items-center justify-center gap-6 sm:gap-16">
-        <span className="text- xl px-2 text-center font-play font-semibold tracking-widest text-[#02183c] sm:text-3xl">
+        <h1 className="px-2 text-center font-play text-xl font-semibold text-[#02183c] md:text-3xl lg:text-5xl">
           {checkTimeIfEnded({ countdownTime })
             ? 'The Future Is Here!'
             : 'The Future is almost here!'}
-        </span>
+        </h1>
 
         <div className="flex justify-center gap-3 sm:gap-8">
           <TimerCard value={countdownTime.days} label="Days" />
